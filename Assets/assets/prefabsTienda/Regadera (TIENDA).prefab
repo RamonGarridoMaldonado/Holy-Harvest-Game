@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8433205567603379603
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1900081246524780780, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Regadera (TIENDA)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 82.4226
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 82.7547
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -372.57275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 87.408554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780781, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4719306395145868904}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: comprarObjeto
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ObjetosTienda, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780782, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900081246524780783, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cef36beae920f6d40a33ff8aea01f1c6,
+        type: 3}
+    - target: {fileID: 1900081246740094623, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e5c5ae37dfe0c98449641e6cc7f833e0, type: 3}
+--- !u!1 &8022795618489810303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1900081246524780780, guid: e5c5ae37dfe0c98449641e6cc7f833e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8433205567603379603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4719306395145868904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8022795618489810303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ceea6a1d665a43d987da9b896a01a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToAdd: {fileID: 8022795618489810303, guid: c8e2145d1704434bab128127f6b71fe5,
+    type: 3}
+  cantidadObjeto: 1
+  HUDInventario: {fileID: 0}
+  TextoDinero: {fileID: 0}
+  nombreObjeto: 
+  precioVenta: 20
+  precioCompra: 100

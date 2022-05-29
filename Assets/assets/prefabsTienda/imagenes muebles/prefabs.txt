@@ -1,0 +1,12 @@
+House_Plant_1
+Chair_4
+Headboard_1_1
+Headboard_1_2
+Couch_1
+Cooker_1
+Books_1_1
+Sink_1
+BookCase_2
+CoffeTable_1
+Chair_7
+Couch_3
