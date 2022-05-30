@@ -11,6 +11,8 @@ TagManager:
   - Punto
   - gallina
   - tomatera
+  - Fire
+  - HablarJugador
   layers:
   - Default
   - TransparentFX
@@ -24,7 +26,7 @@ TagManager:
   - triggerPlantacionPruebas
   - Jugador
   - Punto
-  - 
+  - HablarJugador
   - 
   - 
   - 

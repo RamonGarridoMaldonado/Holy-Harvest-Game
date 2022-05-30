@@ -31,12 +31,18 @@ public class Tienda : MonoBehaviour
 
         if (activarTienda)
         {
-            HUDComprar.active = true;
+            if (HUDComprar!=null)
+            {
+                HUDComprar.active = true;
+            }
             jugador.active = false;
             Cursor.visible = true;
         } else
         {
-            HUDComprar.active = false;
+            if (HUDComprar != null)
+            {
+                HUDComprar.active = false;
+            }
             jugador.active = true;
             Cursor.visible = false;
         }

@@ -7,7 +7,7 @@ public class movimientoNPCs : MonoBehaviour
     public float velocidad = 10f;
     public Transform punto1, punto2, punto3, punto4, punto5, punto6;
     private Transform siguientePunto;
-    bool movimiento = true;
+    bool movimiento = true,hablando = false;
     private Animator animator;
 
     // Start is called before the first frame update
@@ -47,9 +47,17 @@ public class movimientoNPCs : MonoBehaviour
             animator.SetBool("Caminando", true);
             transform.Translate(new Vector3(0, 0, velocidad * Time.deltaTime));
         }
-        else
+        else if (!movimiento)
         {
             animator.SetBool("Caminando", false);
+        }
+
+        if (hablando)
+        {
+            animator.SetBool("Hablando", true);
+        } else if (!hablando)
+        {
+            animator.SetBool("Hablando", false);
         }
     }
 
@@ -81,6 +89,22 @@ public class movimientoNPCs : MonoBehaviour
             }
             transform.LookAt(new Vector3(siguientePunto.position.x, transform.position.y, siguientePunto.position.z));
             StartCoroutine("EsperarSiguientePunto");
+        }
+
+        if (other.tag == "HablarJugador")
+        {
+            print("Colision detectada con el jugador");
+            movimiento = false;
+            hablando = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "HablarJugador")
+        {
+            movimiento = true;
+            hablando = false;
         }
     }
 

@@ -137,4 +137,9 @@ public class Bolsa : MonoBehaviour
             ActivarInventario = !ActivarInventario;
         }
     }
+
+    public Dictionary<string,int> obtenerObjetosBolsa()
+    {
+        return objetosBolsa;
+    }
 }
