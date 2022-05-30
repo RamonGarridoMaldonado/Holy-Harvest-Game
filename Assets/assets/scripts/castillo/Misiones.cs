@@ -21,10 +21,12 @@ public class Misiones : MonoBehaviour
     {
         if (Aceptada && !HUDMisionAceptada.activeSelf)
         {
+            OcultarTodosHUD();
             HUDMisionAceptada.SetActive(true);
         }
         if (Rechazada && !HUDMisionRechazada.activeSelf)
         {
+            OcultarTodosHUD();
             HUDMisionRechazada.SetActive(true);
         }
 
@@ -32,41 +34,53 @@ public class Misiones : MonoBehaviour
         {
             salirConversacion();
         }
+
+        if (Terminada && !HUDMisionTerminada.activeSelf)
+        {
+            OcultarTodosHUD();
+            HUDMisionTerminada.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "HablarJugador")
         {
-            dentro = true;
             personaje.GetComponent<MovimientoJugador>().enabled = false;
+            this.transform.LookAt(personaje.transform);
+            dentro = true;
             animator.SetFloat("velocidad", 0f, 0f, Time.deltaTime);
             camaraConversacion.SetActive(true);
             camaraPrincipal.SetActive(false);
             if (!Terminada && !Rechazada && !Aceptada && !recursosInsuficientes)
             {
+                OcultarTodosHUD();
                 Cursor.visible = true;
                 HUDmision.SetActive(true);
             }
 
             if (Aceptada)
             {
+                OcultarTodosHUD();
                 Cursor.visible = true;
                 HUDMisionAceptada.SetActive(true);
             }
 
             if (Rechazada)
             {
+                OcultarTodosHUD();
                 Cursor.visible = true;
                 HUDMisionRechazada.SetActive(true);
             }
             if (recursosInsuficientes)
             {
+                OcultarTodosHUD();
                 Cursor.visible = true;
                 HUDMisionRecursosInsuficientes.SetActive(true);
             }
             if (Terminada)
             {
+                OcultarTodosHUD();
                 Cursor.visible = true;
                 HUDMisionTerminada.SetActive(true);
             }
@@ -77,6 +91,10 @@ public class Misiones : MonoBehaviour
     {
         if (other.tag == "HablarJugador")
         {
+            if (Aceptada)
+            {
+                Terminada = true;
+            }
             salirConversacion();
         }
     }
@@ -110,11 +128,22 @@ public class Misiones : MonoBehaviour
 
     private void salirConversacion()
     {
+        Aceptada = false;
+        Rechazada = false;
         personaje.GetComponent<MovimientoJugador>().enabled = true;
         dentro = false;
         personaje.SetActive(true);
         camaraConversacion.SetActive(false);
         camaraPrincipal.SetActive(true);
+        HUDmision.SetActive(false);
+        HUDMisionAceptada.SetActive(false);
+        HUDMisionRechazada.SetActive(false);
+        HUDMisionRecursosInsuficientes.SetActive(false);
+        HUDMisionTerminada.SetActive(false);
+    }
+
+    private void OcultarTodosHUD()
+    {
         HUDmision.SetActive(false);
         HUDMisionAceptada.SetActive(false);
         HUDMisionRechazada.SetActive(false);
