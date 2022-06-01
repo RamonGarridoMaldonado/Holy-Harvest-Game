@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private GameObject HUDPlantar, HUDComprarTerreno;
     private static GameObject HUDRegar,jugador;
+    public GameManager manager;
     public GameObject HUDComprar, HUDInventario, Planta, CanvasTienda, TomateraPlanta, MaizPlanta, BerenjenaPlanta,regadera,berenjena;
     public static int dinero = 99999, mueblesComprados;
     public Text TextoDinero;
@@ -102,4 +103,14 @@ public class GameManager : MonoBehaviour
     {
         return mueblesComprados;
     } 
+
+    public static float obtenerEstamina()
+    {
+        return jugador.GetComponent<BarraDeEstamina>().verEstaminaActual();
+    }
+
+    public Dictionary<string,int> obtenerBolsa()
+    {
+        return manager.GetComponent<Bolsa>().obtenerObjetosBolsa();
+    }
 }
