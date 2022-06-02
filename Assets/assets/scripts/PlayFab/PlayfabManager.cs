@@ -24,7 +24,8 @@ public class PlayfabManager : MonoBehaviour
 
     void OnSuccess(LoginResult result)
     {
-        Debug.Log("Se ha realizado el Login correctamente / Cuenta creada");
+        CargarDatosJugador();
+        //Debug.Log("Se ha realizado el Login correctamente / Cuenta creada");
     }
 
     void OnError (PlayFabError error)
@@ -69,6 +70,26 @@ public class PlayfabManager : MonoBehaviour
         foreach (var item in result.Leaderboard)
         {
             Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
+        }
+    }
+
+    public void CargarDatosJugador()
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), datosRecividos, OnError);
+    }
+
+    void datosRecividos (GetUserDataResult result)
+    {
+        if (result.Data != null && result.Data.ContainsKey("Dinero") && result.Data.ContainsKey("Estamina"))
+        {
+            print(result.Data["Dinero"].Value);
+            print(result.Data["Estamina"].Value);
+
+            GameManager.establecerDinero(int.Parse(result.Data["Dinero"].Value));
+            GameManager.establecerEstamina(float.Parse(result.Data["Estamina"].Value));
+        } else
+        {
+            Debug.Log("Los datos del jugador no son correctos o no son suficientes");
         }
     }
 

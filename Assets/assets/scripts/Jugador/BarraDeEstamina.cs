@@ -33,4 +33,9 @@ public class BarraDeEstamina : MonoBehaviour
     public void llenarEstamina() {
         EstaminaActual = estaminaMaxima;
     }
+
+    public void setEstamina(float estaminaGuardada)
+    {
+        EstaminaActual = estaminaGuardada;
+    }
 }

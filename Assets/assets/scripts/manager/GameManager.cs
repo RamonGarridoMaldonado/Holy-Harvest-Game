@@ -9,11 +9,12 @@ public class GameManager : MonoBehaviour
     private static GameObject HUDRegar,jugador;
     public GameManager manager;
     public GameObject HUDComprar, HUDInventario, Planta, CanvasTienda, TomateraPlanta, MaizPlanta, BerenjenaPlanta,regadera,berenjena;
-    public static int dinero = 99999, mueblesComprados;
+    public static int dinero = 11111, mueblesComprados;
     public Text TextoDinero;
     Bolsa bolsa;
 
     // Start is called before the first frame update
+
     [System.Obsolete]
     void Start()
     {
@@ -43,8 +44,6 @@ public class GameManager : MonoBehaviour
         }
         Cursor.visible = false;
 
-        print(regadera);
-
         bolsa.verificarSlotVacio(TomateraPlanta, "Tomatera (USE) 1", 10);
         bolsa.verificarSlotVacio(MaizPlanta, "PlantaMaiz (USE) 2", 10);
         bolsa.verificarSlotVacio(BerenjenaPlanta, "PlantaBerenjena (USE) 2", 10);
@@ -70,6 +69,11 @@ public class GameManager : MonoBehaviour
 
     public static int getDinero () {
         return dinero;
+    }
+
+    public static void establecerDinero(int dineroGuardado)
+    {
+        dinero = dineroGuardado;
     }
 
     public static void mostrarRegar()
@@ -107,6 +111,12 @@ public class GameManager : MonoBehaviour
     public static float obtenerEstamina()
     {
         return jugador.GetComponent<BarraDeEstamina>().verEstaminaActual();
+    }
+
+    public static void establecerEstamina(float estaminaGuardada)
+    {
+       jugador.GetComponent<BarraDeEstamina>().setEstamina(estaminaGuardada);
+
     }
 
     public Dictionary<string,int> obtenerBolsa()
