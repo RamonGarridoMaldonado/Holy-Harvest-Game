@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         bolsa.verificarSlotVacio(MaizPlanta, "PlantaMaiz (USE) 2", 10);
         bolsa.verificarSlotVacio(BerenjenaPlanta, "PlantaBerenjena (USE) 2", 10);
         bolsa.verificarSlotVacio(regadera, "Regadera (USE)", 100);
-        bolsa.verificarSlotVacio(berenjena, "Berenjena (USE) 1", 30);
+        //bolsa.verificarSlotVacio(berenjena, "Berenjena (USE) 1", 30);
     }
     // Update is called once per frame
     void Update()

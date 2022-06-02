@@ -72,13 +72,13 @@ public class PlayfabManager : MonoBehaviour
         }
     }
 
-    public void GuardarDatosJugador()
+    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero)
     {
-        GameManager gm = new GameManager();
         var request = new UpdateUserDataRequest
         {
             Data = new Dictionary<string, string> {
-                {"Estamina", GameManager.obtenerEstamina().ToString() }
+                {"Estamina", guardarEstamina },
+                {"Dinero", guardarDinero },
             }
         };
         PlayFabClientAPI.UpdateUserData(request, datosEnviados, OnError);
