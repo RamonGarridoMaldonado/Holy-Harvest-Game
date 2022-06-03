@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tienda : MonoBehaviour
 {
     public GameObject jugador;
-    GameObject HUDComprar;
+    public GameObject HUDComprar;
     public GameObject inventario;
     public GameObject botonComprar;
     public GameObject[] objetosDeLATienda;
@@ -16,7 +16,6 @@ public class Tienda : MonoBehaviour
     private void Start()
     {
         Cursor.visible = true;
-        HUDComprar = GameObject.Find("Canvas");
         bolsa = gameObject.GetComponent<BolsaTienda>();
         actualizarTienda();
     }
@@ -31,18 +30,12 @@ public class Tienda : MonoBehaviour
 
         if (activarTienda)
         {
-            if (HUDComprar!=null)
-            {
-                HUDComprar.active = true;
-            }
+             HUDComprar.active = true;
             jugador.active = false;
             Cursor.visible = true;
         } else
         {
-            if (HUDComprar != null)
-            {
-                HUDComprar.active = false;
-            }
+            HUDComprar.active = false;
             jugador.active = true;
             Cursor.visible = false;
         }

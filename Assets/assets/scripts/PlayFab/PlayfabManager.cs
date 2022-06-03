@@ -82,18 +82,31 @@ public class PlayfabManager : MonoBehaviour
     {
         if (result.Data != null && result.Data.ContainsKey("Dinero") && result.Data.ContainsKey("Estamina"))
         {
-            print(result.Data["Dinero"].Value);
-            print(result.Data["Estamina"].Value);
-
             GameManager.establecerDinero(int.Parse(result.Data["Dinero"].Value));
             GameManager.establecerEstamina(float.Parse(result.Data["Estamina"].Value));
+            if (result.Data["Logro1"].Value == "True")
+            {
+                GameManager.setLogro1Completado();
+            }
+            if (result.Data["Logro2"].Value == "True")
+            {
+                GameManager.setLogro2Completado();
+            }
+            if (result.Data["Logro3"].Value == "True")
+            {
+                GameManager.setLogro3Completado();
+            }
+            if (result.Data["Logro4"].Value == "True")
+            {
+                GameManager.setLogro4Completado();
+            }
         } else
         {
             Debug.Log("Los datos del jugador no son correctos o no son suficientes");
         }
     }
 
-    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero, string logro1, string logro2, string logro3, string logro4)
+    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero, string logro1, string logro2, string logro3, string logro4, string balon)
     {
         var request = new UpdateUserDataRequest
         {
@@ -103,7 +116,8 @@ public class PlayfabManager : MonoBehaviour
                 {"Logro1", logro1},
                 {"Logro2", logro2},
                 {"Logro3", logro3},
-                {"Logro4", logro4}
+                {"Logro4", logro4},
+                {"balon", balon}
             }
         };
         PlayFabClientAPI.UpdateUserData(request, datosEnviados, OnError);

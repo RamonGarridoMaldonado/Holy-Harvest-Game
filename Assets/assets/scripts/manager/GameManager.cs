@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private GameObject HUDPlantar, HUDComprarTerreno;
     private static GameObject HUDRegar,jugador;
-    public GameManager manager;
+    public static  GameManager manager;
     public GameObject HUDComprar, HUDInventario, Planta, CanvasTienda, TomateraPlanta, MaizPlanta, BerenjenaPlanta,regadera,berenjena;
     public static GameObject logrosMuebles;
     public static int dinero = 11111, mueblesComprados;
@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         bolsa = this.GetComponent<Bolsa>();
-
         HUDPlantar = GameObject.Find("HUDPlantar");
         HUDRegar = GameObject.Find("HUDRegar");
         HUDComprar = GameObject.Find("HUDComprar");
@@ -144,5 +143,31 @@ public class GameManager : MonoBehaviour
     public static string getLogro4Conseguido() {
         bool logro4 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro4Completado();
         return logro4.ToString();
+    }
+
+    public static void setLogro1Completado()
+    {
+        logrosMuebles.GetComponent<LogrosMuebles>().setLogro1Completado();
+    }
+
+    public static void setLogro2Completado()
+    {
+        logrosMuebles.GetComponent<LogrosMuebles>().setLogro2Completado();
+    }
+
+    public static void setLogro3Completado()
+    {
+        logrosMuebles.GetComponent<LogrosMuebles>().setLogro3Completado();
+    }
+
+    public static void setLogro4Completado()
+    {
+        logrosMuebles.GetComponent<LogrosMuebles>().setLogro4Completado();
+    }
+
+    public static string getBalonComprado()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getBalonC();
+        return comprado.ToString();
     }
 }

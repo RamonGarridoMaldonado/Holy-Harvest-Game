@@ -140,4 +140,23 @@ public class LogrosMuebles : MonoBehaviour
     public bool isLogro4Completado() {
         return isCompLogro4;
     }
+
+    public void setLogro1Completado()
+    {
+        completado1.SetActive(true);
+    }
+    public void setLogro2Completado()
+    {
+        completado2.SetActive(true);
+    }
+
+    public void setLogro3Completado()
+    {
+        completado3.SetActive(true);
+    }
+
+    public void setLogro4Completado()
+    {
+        completado4.SetActive(true);
+    }
 }

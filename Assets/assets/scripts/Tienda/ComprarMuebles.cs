@@ -16,8 +16,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 200)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Ball_1");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(200);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -33,8 +31,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 250)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/House_Plant_1");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(250);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -51,8 +47,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 600)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/BookCase_2");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(600);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -69,8 +63,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 400)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Sink_1");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(400);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -87,8 +79,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 150)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Books_1_1");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(150);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -105,8 +95,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 450)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/CoffeTable_1");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(450);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -123,8 +111,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 150)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Chair_7");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(150);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -141,8 +127,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 600)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Couch_1");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(600);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -159,8 +143,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 450 )
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Chair_4");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(450);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -177,8 +159,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 600)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Couch_3");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(600);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -195,8 +175,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 400)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Cooker_1");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(400);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -213,8 +191,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 500)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Headboard_1_2");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(500);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
@@ -231,8 +207,6 @@ public class ComprarMuebles : MonoBehaviour
             if (GameManager.getDinero() >= 400)
             {
                 GameManager.anadirCompraMueble();
-                GameObject mueble = GameObject.Find("Casa/House/Headboard_1_1");
-                mueble.SetActive(true);
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(400);
                 TextoDinero.text = GameManager.getDinero().ToString() + " $";
