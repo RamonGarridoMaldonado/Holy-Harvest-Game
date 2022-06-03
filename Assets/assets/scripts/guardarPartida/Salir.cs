@@ -8,6 +8,7 @@ public class Salir : MonoBehaviour
     {
         PlayfabManager pfb = new PlayfabManager();
         pfb.EnviarDineroATabla();
-        pfb.GuardarDatosJugador(GameManager.obtenerEstamina().ToString(), GameManager.getDinero().ToString());
+        pfb.GuardarDatosJugador(GameManager.obtenerEstamina().ToString(), GameManager.getDinero().ToString(), GameManager.getLogro1Conseguido(),
+        GameManager.getLogro2Conseguido(), GameManager.getLogro3Conseguido(), GameManager.getLogro4Conseguido());
     }
 }

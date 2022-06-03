@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private static GameObject HUDRegar,jugador;
     public GameManager manager;
     public GameObject HUDComprar, HUDInventario, Planta, CanvasTienda, TomateraPlanta, MaizPlanta, BerenjenaPlanta,regadera,berenjena;
+    public static GameObject logrosMuebles;
     public static int dinero = 11111, mueblesComprados;
     public Text TextoDinero;
     Bolsa bolsa;
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
         jugador = GameObject.Find("Jugador/Personaje/Ch42_nonPBR");
         TextoDinero = HUDInventario.transform.Find("TextoDinero").GetComponent<Text>();
         TextoDinero.text = dinero.ToString() + " $";
+        logrosMuebles = GameObject.Find("Templo Logros/LogrosMuebles/TriggerLogrosMuebles");
 
         HUDComprar.active = false;
         if (HUDPlantar!=null)
@@ -122,5 +124,25 @@ public class GameManager : MonoBehaviour
     public Dictionary<string,int> obtenerBolsa()
     {
         return manager.GetComponent<Bolsa>().obtenerObjetosBolsa();
+    }
+
+    public static string getLogro1Conseguido() {
+        bool logro1 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro1Completado();
+        return logro1.ToString();
+    }
+
+    public static string getLogro2Conseguido() {
+        bool logro2 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro2Completado();
+        return logro2.ToString();
+    }
+
+    public static string getLogro3Conseguido() {
+        bool logro3 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro3Completado();
+        return logro3.ToString();
+    }
+
+    public static string getLogro4Conseguido() {
+        bool logro4 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro4Completado();
+        return logro4.ToString();
     }
 }

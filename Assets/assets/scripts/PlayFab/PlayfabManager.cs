@@ -93,13 +93,17 @@ public class PlayfabManager : MonoBehaviour
         }
     }
 
-    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero)
+    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero, string logro1, string logro2, string logro3, string logro4)
     {
         var request = new UpdateUserDataRequest
         {
             Data = new Dictionary<string, string> {
                 {"Estamina", guardarEstamina },
                 {"Dinero", guardarDinero },
+                {"Logro1", logro1},
+                {"Logro2", logro2},
+                {"Logro3", logro3},
+                {"Logro4", logro4}
             }
         };
         PlayFabClientAPI.UpdateUserData(request, datosEnviados, OnError);

@@ -9,6 +9,7 @@ public class LogrosMuebles : MonoBehaviour
     public GameObject HUDLogrosMuebles, completado1, completado2, completado3, completado4, HUDInventario, HUDMostrarLogro;
     Text TextoDinero;
     public Text textoLogro;
+    public bool isCompLogro1 = false,isCompLogro2 = false,isCompLogro3 = false,isCompLogro4 = false;
     GameObject jugador;
     
 
@@ -56,6 +57,7 @@ public class LogrosMuebles : MonoBehaviour
 
     public void logroCompletado1()
     {
+        isCompLogro1 = true;
         jugador.GetComponent<BarraDeEstamina>().sumarEstaminaTotal(10);
         jugador.GetComponent<BarraDeEstamina>().llenarEstamina();
         GameManager.setSumarDinero(400);
@@ -67,6 +69,7 @@ public class LogrosMuebles : MonoBehaviour
 
     public void logroCompletado2()
     {
+        isCompLogro2 = true;
         jugador.GetComponent<BarraDeEstamina>().sumarEstaminaTotal(10);
         jugador.GetComponent<BarraDeEstamina>().llenarEstamina();
         GameManager.setSumarDinero(2000);
@@ -78,6 +81,7 @@ public class LogrosMuebles : MonoBehaviour
 
     public void logroCompletado3()
     {
+        isCompLogro3 = true;
         jugador.GetComponent<BarraDeEstamina>().sumarEstaminaTotal(10);
         jugador.GetComponent<BarraDeEstamina>().llenarEstamina();
         GameManager.setSumarDinero(5000);
@@ -89,6 +93,7 @@ public class LogrosMuebles : MonoBehaviour
 
     public void logroCompletado4()
     {
+        isCompLogro4 = true;
         jugador.GetComponent<BarraDeEstamina>().sumarEstaminaTotal(20);
         jugador.GetComponent<BarraDeEstamina>().llenarEstamina();
         GameManager.setSumarDinero(7500);
@@ -119,4 +124,20 @@ public class LogrosMuebles : MonoBehaviour
         HUDMostrarLogro.SetActive(false);
     }
 
+
+    public bool isLogro1Completado() {
+        return isCompLogro1;
+    }
+
+    public bool isLogro2Completado() {
+        return isCompLogro2;
+    }
+
+    public bool isLogro3Completado() {
+        return isCompLogro3;
+    }
+
+    public bool isLogro4Completado() {
+        return isCompLogro4;
+    }
 }
