@@ -43,6 +43,13 @@ public class gameManager : MonoBehaviour
         pantallaCarga.SetActive(false);
         bote.SetActive(true);
         yield return new WaitForSeconds(6f);
-        SceneManager.LoadScene("Pueblo");
+        if (SceneManager.GetActiveScene().name.Equals("TransicionGranjaPueblo"))
+        {
+            SceneManager.LoadScene("Pueblo");
+        }
+        else if (SceneManager.GetActiveScene().name.Equals("TransicionPuebloGranja"))
+        {
+            SceneManager.LoadScene("Granja 2");
+        }
     }
 }

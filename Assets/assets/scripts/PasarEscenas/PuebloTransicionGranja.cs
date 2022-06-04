@@ -19,7 +19,7 @@ public class PuebloTransicionGranja : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && puede)
         {
-            SceneManager.LoadScene("TransicionGranjaPueblo");
+            SceneManager.LoadScene("TransicionPuebloGranja");
         }
     }
 

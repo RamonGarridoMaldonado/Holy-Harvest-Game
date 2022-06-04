@@ -15,6 +15,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 200)
             {
+                Camera.main.GetComponent<MueblesComprados>().setBalonC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(200);
@@ -30,6 +31,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 250)
             {
+                Camera.main.GetComponent<MueblesComprados>().setPlantaC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(250);
@@ -46,6 +48,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 600)
             {
+                Camera.main.GetComponent<MueblesComprados>().setestanteriaLibrosC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(600);
@@ -62,6 +65,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 400)
             {
+                Camera.main.GetComponent<MueblesComprados>().setLavadorC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(400);
@@ -78,6 +82,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 150)
             {
+                Camera.main.GetComponent<MueblesComprados>().setlibrosAbajoC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(150);
@@ -94,6 +99,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 450)
             {
+                Camera.main.GetComponent<MueblesComprados>().setMesaAbajoC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(450);
@@ -110,6 +116,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 150)
             {
+                Camera.main.GetComponent<MueblesComprados>().setsilla1C();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(150);
@@ -126,6 +133,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 600)
             {
+                Camera.main.GetComponent<MueblesComprados>().setSillonArribaC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(600);
@@ -142,6 +150,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 450 )
             {
+                Camera.main.GetComponent<MueblesComprados>().setsillonFueraC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(450);
@@ -158,6 +167,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 600)
             {
+                Camera.main.GetComponent<MueblesComprados>().setSillonPlantaBajaC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(600);
@@ -174,6 +184,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 400)
             {
+                Camera.main.GetComponent<MueblesComprados>().setVitroceramicaC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(400);
@@ -190,6 +201,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 500)
             {
+                Camera.main.GetComponent<MueblesComprados>().setMesitaArribaC();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(500);
@@ -206,6 +218,7 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 400)
             {
+                Camera.main.GetComponent<MueblesComprados>().setMesitaArriba2C();
                 GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
                 GameManager.setRestarDinero(400);

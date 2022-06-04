@@ -227,8 +227,13 @@ public class MueblesComprados : MonoBehaviour
         mesitaArribaC = true;
     }
 
-    public bool setMesitaArriba2C()
+    public bool getMesitaArriba2C()
     {
         return mesitaArriba2C;
+    }
+
+    public void setMesitaArriba2C()
+    {
+        mesitaArriba2C = true;
     }
 }

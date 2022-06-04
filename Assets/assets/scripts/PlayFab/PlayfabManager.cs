@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PlayFab;
-using PlayFab.ClientModels; 
+using PlayFab.ClientModels;
+using UnityEngine.SceneManagement;
 
 public class PlayfabManager : MonoBehaviour
 {
     // Start is called before the first frame update
+
     void Start()
     {
         Login();
@@ -84,41 +86,99 @@ public class PlayfabManager : MonoBehaviour
         {
             GameManager.establecerDinero(int.Parse(result.Data["Dinero"].Value));
             GameManager.establecerEstamina(float.Parse(result.Data["Estamina"].Value));
-            if (result.Data["Logro1"].Value == "True")
+
+            if (SceneManager.GetActiveScene().name.Equals("Pueblo"))
             {
-                GameManager.setLogro1Completado();
-            }
-            if (result.Data["Logro2"].Value == "True")
+                if (result.Data["balon"].Value == "True")
+                {
+                    GameManager.setBalonComprado();
+                }
+
+                if (result.Data["planta"].Value == "True")
+                {
+                    GameManager.setPlantaComprado();
+                }
+
+                if (result.Data["estanteriaLibros"].Value == "True")
+                {
+                    GameManager.setEstanteriaLibros();
+                }
+
+                if (result.Data["lavador"].Value == "True")
+                {
+                    GameManager.setLavador();
+                }
+
+                if (result.Data["librosAbajo"].Value == "True")
+                {
+                    GameManager.setLibrosAbajo();
+                }
+            } 
+
+
+            else if (SceneManager.GetActiveScene().name.Equals("Granja 2"))
             {
-                GameManager.setLogro2Completado();
+                if (result.Data["balon"].Value == "True")
+                {
+                    Camera.main.GetComponent<MueblesComprados>().balonComprado();
+                }
+
+                if (result.Data["planta"].Value == "True")
+                {
+                    Camera.main.GetComponent<MueblesComprados>().plantaComprada();
+                }
+
+                if (result.Data["estanteriaLibros"].Value == "True")
+                {
+                    Camera.main.GetComponent<MueblesComprados>().estanteriaLibrosComprado();
+                }
+
+                if (result.Data["lavador"].Value == "True")
+                {
+                    Camera.main.GetComponent<MueblesComprados>().lavadorComprado();
+                }
+
+                if (result.Data["librosAbajo"].Value == "True")
+                {
+                    Camera.main.GetComponent<MueblesComprados>().librosAbajoComprado();
+                }
             }
-            if (result.Data["Logro3"].Value == "True")
-            {
-                GameManager.setLogro3Completado();
-            }
-            if (result.Data["Logro4"].Value == "True")
-            {
-                GameManager.setLogro4Completado();
-            }
-        } else
+        } 
+        else
         {
             Debug.Log("Los datos del jugador no son correctos o no son suficientes");
         }
     }
 
-    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero, string logro1, string logro2, string logro3, string logro4, string balon)
+    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero, string balon, string planta, string estanterialibros, string lavador, string librosAbajo)
     {
         var request = new UpdateUserDataRequest
         {
             Data = new Dictionary<string, string> {
                 {"Estamina", guardarEstamina },
                 {"Dinero", guardarDinero },
-                {"Logro1", logro1},
-                {"Logro2", logro2},
-                {"Logro3", logro3},
-                {"Logro4", logro4},
-                {"balon", balon}
+                {"balon", balon},
+                {"planta", planta },
+                {"estanteriaLibros", estanterialibros },
+                {"lavador",lavador },
+                {"librosAbajo",librosAbajo },
+                
             }
+        };
+        PlayFabClientAPI.UpdateUserData(request, datosEnviados, OnError);
+    }
+
+    public void GuardarDatosJugadorPueblo (string balon, string planta, string estanterialibros, string lavador, string librosAbajo)
+    {
+        var request = new UpdateUserDataRequest
+            {
+                Data = new Dictionary<string, string> {
+                    {"balon", balon},
+                    {"planta",planta},
+                    {"estanteriaLibros",estanterialibros },
+                    {"lavador",lavador },
+                    {"librosAbajo", librosAbajo},
+                }
         };
         PlayFabClientAPI.UpdateUserData(request, datosEnviados, OnError);
     }

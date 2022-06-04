@@ -170,4 +170,141 @@ public class GameManager : MonoBehaviour
         bool comprado = Camera.main.GetComponent<MueblesComprados>().getBalonC();
         return comprado.ToString();
     }
+
+    public static void setBalonComprado()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setBalonC();
+    }
+
+    public static string getPlantaComprado()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getPlantaC();
+        return comprado.ToString();
+    }
+
+    public static void setPlantaComprado()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setPlantaC();
+    }
+
+    public static string getEstanteriaLibros()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getEstanteriaLibrosC();
+        return comprado.ToString();
+    }
+
+    public static void setEstanteriaLibros()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setestanteriaLibrosC();
+    }
+
+    public static string getLavador()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getLavadorC();
+        return comprado.ToString();
+    }
+
+    public static void setLavador()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setLavadorC();
+    }
+
+    public static string getLibrosAbajo()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getLibrosAbajoC();
+        return comprado.ToString();
+    }
+
+    public static void setLibrosAbajo()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setlibrosAbajoC();
+    }
+
+    public static string getMesaAbajo()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getMesaAbajoC();
+        return comprado.ToString();
+    }
+
+    public static void setMesaAbajo()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setMesaAbajoC();
+    }
+
+    public static string getSilla1()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getSilla1C();
+        return comprado.ToString();
+    }
+
+    public static void setSilla1()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setsilla1C();
+    }
+
+    public static string getSillonArriba()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getSillonArribaC();
+        return comprado.ToString();
+    }
+
+    public static void setSillonArriba()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setSillonArribaC();
+    }
+
+    public static string getSillonFuera()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getSillonFueraC();
+        return comprado.ToString();
+    }
+
+    public static void setSillonFuera()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setsillonFueraC();
+    }
+
+    public static string getsillonPlantaBaja()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getSillonPlantaBajaC();
+        return comprado.ToString();
+    }
+
+    public static void setsillonPlantaBaja()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setSillonPlantaBajaC();
+    }
+
+    public static string getVitroceramica()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getVitroceramicaC();
+        return comprado.ToString();
+    }
+
+    public static void setVitroceramica()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setVitroceramicaC();
+    }
+
+    public static string getMesitaArriba()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getMesitaArribaC();
+        return comprado.ToString();
+    }
+
+    public static void setMesitaArriba()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setMesitaArribaC();
+    }
+
+    public static string getMesitaArriba2()
+    {
+        bool comprado = Camera.main.GetComponent<MueblesComprados>().getMesitaArriba2C();
+        return comprado.ToString();
+    }
+
+    public static void setMesitaArriba2()
+    {
+        Camera.main.GetComponent<MueblesComprados>().setMesitaArriba2C();
+    }
 }

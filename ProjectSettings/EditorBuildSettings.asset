@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pueblo.unity
     guid: 4a73a9fdd3a0c44129a14bc90144bd0b
+  - enabled: 1
+    path: Assets/Scenes/TransicionPuebloGranja.unity
+    guid: 3bc53cd4a07f31a40bbcdd246516f3ba
   m_configObjects: {}
