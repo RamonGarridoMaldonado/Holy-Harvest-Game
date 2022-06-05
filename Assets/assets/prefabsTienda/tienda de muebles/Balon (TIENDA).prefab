@@ -151,6 +151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagenVendido: {fileID: 5468515025021252819}
+  HUDInventario: {fileID: 0}
+  TextoDinero: {fileID: 0}
 --- !u!1 &1900081246740094621
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1023366812936905658
 RectTransform:
   m_ObjectHideFlags: 0

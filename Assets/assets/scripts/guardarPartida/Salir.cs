@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Salir : MonoBehaviour
 {
@@ -9,12 +10,14 @@ public class Salir : MonoBehaviour
         PlayfabManager pfb = new PlayfabManager();
         pfb.EnviarDineroATabla();
         pfb.GuardarDatosJugador(GameManager.obtenerEstamina().ToString(), GameManager.getDinero().ToString(), GameManager.getBalonComprado(), GameManager.getPlantaComprado(), GameManager.getEstanteriaLibros(), GameManager.getLavador(), GameManager.getLibrosAbajo());
+        SceneManager.LoadScene("MenuInicial");
     }
 
     public void exitPueblo()
     {
         PlayfabManager pfb = new PlayfabManager();
         pfb.EnviarDineroATabla();
-        pfb.GuardarDatosJugadorPueblo(GameManager.getBalonComprado(), GameManager.getPlantaComprado(), GameManager.getEstanteriaLibros(), GameManager.getLavador(), GameManager.getLibrosAbajo());
+        pfb.GuardarDatosJugadorPueblo(GameManager.obtenerEstamina().ToString(), GameManager.getDinero().ToString(), GameManager.getBalonComprado(), GameManager.getPlantaComprado(), GameManager.getEstanteriaLibros(), GameManager.getLavador(), GameManager.getLibrosAbajo());
+        SceneManager.LoadScene("MenuInicial");
     }
 }

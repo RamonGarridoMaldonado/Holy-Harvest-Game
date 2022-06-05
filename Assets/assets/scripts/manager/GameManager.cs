@@ -5,20 +5,26 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+
+    #region variables
     private GameObject HUDPlantar, HUDComprarTerreno;
     private static GameObject HUDRegar,jugador;
     public static  GameManager manager;
-    public GameObject HUDComprar, HUDInventario, Planta, CanvasTienda, TomateraPlanta, MaizPlanta, BerenjenaPlanta,regadera,berenjena;
+    public GameObject HUDComprar, HUDInventario, Planta, CanvasTienda, TomateraPlanta, MaizPlanta, BerenjenaPlanta, regadera, berenjena;
+    public static GameObject logro1, logro2, logro3;
     public static GameObject logrosMuebles;
     public static int dinero = 11111, mueblesComprados;
     public Text TextoDinero;
     Bolsa bolsa;
+    static bool logro1Conseguido = false, logro2Conseguido = false, logro3Conseguido = false;
+    #endregion
 
     // Start is called before the first frame update
 
     [System.Obsolete]
     void Start()
     {
+        #region declaracion variables
         bolsa = this.GetComponent<Bolsa>();
         HUDPlantar = GameObject.Find("HUDPlantar");
         HUDRegar = GameObject.Find("HUDRegar");
@@ -43,8 +49,9 @@ public class GameManager : MonoBehaviour
         {
             HUDRegar.active = false;
         }
-        Cursor.visible = false;
+        #endregion
 
+        Cursor.visible = false;
         bolsa.verificarSlotVacio(TomateraPlanta, "Tomatera (USE) 1", 10);
         bolsa.verificarSlotVacio(MaizPlanta, "PlantaMaiz (USE) 2", 10);
         bolsa.verificarSlotVacio(BerenjenaPlanta, "PlantaBerenjena (USE) 2", 10);
@@ -60,6 +67,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    #region Dinero
     public static void setSumarDinero(int cantidad) {
         dinero += cantidad;
     }
@@ -76,7 +84,9 @@ public class GameManager : MonoBehaviour
     {
         dinero = dineroGuardado;
     }
+    #endregion
 
+    #region
     public static void mostrarRegar()
     {
         HUDRegar.SetActive(true);
@@ -86,7 +96,9 @@ public class GameManager : MonoBehaviour
     {
         HUDRegar.SetActive(false);
     }
+    #endregion
 
+    #region items
     public static void guardarItems()
     {
         GameObject regadera = GameObject.Find("Casa/Jugador/Personaje/Ch42_nonPBR/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/WateringCan_01");
@@ -98,17 +110,9 @@ public class GameManager : MonoBehaviour
         GameObject PlantaBerenjena = GameObject.Find("Casa/Jugador/Personaje/Ch42_nonPBR/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/Eggplant_Plant");
         PlantaBerenjena.SetActive(false);  
     }
+    #endregion
 
-    public static void anadirCompraMueble()
-    {
-        mueblesComprados += 1;
-    }
-
-    public static int obtenerNumeroMueblesComprados()
-    {
-        return mueblesComprados;
-    } 
-
+    #region estamina
     public static float obtenerEstamina()
     {
         return jugador.GetComponent<BarraDeEstamina>().verEstaminaActual();
@@ -119,51 +123,48 @@ public class GameManager : MonoBehaviour
        jugador.GetComponent<BarraDeEstamina>().setEstamina(estaminaGuardada);
 
     }
+    #endregion
 
     public Dictionary<string,int> obtenerBolsa()
     {
         return manager.GetComponent<Bolsa>().obtenerObjetosBolsa();
     }
 
-    public static string getLogro1Conseguido() {
-        bool logro1 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro1Completado();
-        return logro1.ToString();
-    }
+    #region logros
 
-    public static string getLogro2Conseguido() {
-        bool logro2 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro2Completado();
-        return logro2.ToString();
-    }
-
-    public static string getLogro3Conseguido() {
-        bool logro3 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro3Completado();
-        return logro3.ToString();
-    }
-
-    public static string getLogro4Conseguido() {
-        bool logro4 = logrosMuebles.GetComponent<LogrosMuebles>().isLogro4Completado();
-        return logro4.ToString();
-    }
-
-    public static void setLogro1Completado()
+    public static void activarLogro1()
     {
-        logrosMuebles.GetComponent<LogrosMuebles>().setLogro1Completado();
+        logro1Conseguido = true;
     }
 
-    public static void setLogro2Completado()
+    public static void activarLogro2()
     {
-        logrosMuebles.GetComponent<LogrosMuebles>().setLogro2Completado();
+        logro2Conseguido = true;
     }
 
-    public static void setLogro3Completado()
+    public static void activarLogro3()
     {
-        logrosMuebles.GetComponent<LogrosMuebles>().setLogro3Completado();
+        logro3Conseguido = true;
     }
 
-    public static void setLogro4Completado()
+    public static bool isLogro1Conseguido()
     {
-        logrosMuebles.GetComponent<LogrosMuebles>().setLogro4Completado();
+        return logro1Conseguido;
     }
+
+    public static bool isLogro2Conseguido()
+    {
+        return logro2Conseguido;
+    }
+
+    public static bool isLogro3Conseguido()
+    {
+        return logro3Conseguido;
+    }
+
+    #endregion
+
+    #region Muebles
 
     public static string getBalonComprado()
     {
@@ -307,4 +308,5 @@ public class GameManager : MonoBehaviour
     {
         Camera.main.GetComponent<MueblesComprados>().setMesitaArriba2C();
     }
+    #endregion
 }

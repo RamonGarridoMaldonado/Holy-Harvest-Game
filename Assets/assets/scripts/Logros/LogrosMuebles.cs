@@ -24,7 +24,7 @@ public class LogrosMuebles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.obtenerNumeroMueblesComprados() == 1 && !completado1.activeSelf)
+        /*if (GameManager.obtenerNumeroMueblesComprados() == 1 && !completado1.activeSelf)
         {
             this.logroCompletado1();
         }
@@ -42,7 +42,7 @@ public class LogrosMuebles : MonoBehaviour
         if (GameManager.obtenerNumeroMueblesComprados() == 13 && !completado4.activeSelf)
         {
             this.logroCompletado4();
-        }
+        }*/
     }
 
     private void OnTriggerEnter(Collider other)

@@ -6,6 +6,7 @@ public class MueblesComprados : MonoBehaviour
 {
     public bool balonC = false, plantaC = false, estanteriaLibrosC = false, lavadorC = false, librosAbajoC = false, mesaAbajoC = false, silla1C = false, sillonArribaC = false, sillonFueraC = false, sillonPlantaBajaC = false, vitroceramicaC = false, mesitaArribaC = false, mesitaArriba2C = false;
 
+    #region Funciones para activar los muebles
     public void balonComprado()
     {
         balonC = true;
@@ -97,6 +98,9 @@ public class MueblesComprados : MonoBehaviour
         mueble.SetActive(true);
     }
 
+    #endregion
+
+    #region Set y Get
     public bool getBalonC()
     {
         return balonC;
@@ -236,4 +240,5 @@ public class MueblesComprados : MonoBehaviour
     {
         mesitaArriba2C = true;
     }
+    #endregion
 }
