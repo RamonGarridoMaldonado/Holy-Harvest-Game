@@ -118,9 +118,10 @@ public class TemporizadorCultivos : MonoBehaviour
 
     IEnumerator esperarAnimacion()
     {
+        jugador.GetComponent<MovimientoJugador>().enabled = false;
         print("Entra en la corutina");
         yield return new WaitForSeconds(3);
         animator.SetBool("regando", false);
-        //jugador.GetComponent<PlantarRegar>().enabled = true;
+        jugador.GetComponent<MovimientoJugador>().enabled = true;
     }
 }

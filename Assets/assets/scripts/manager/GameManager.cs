@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Text TextoDinero;
     Bolsa bolsa;
     static bool logro1Conseguido = false, logro2Conseguido = false, logro3Conseguido = false;
+    static bool zonaComprada = false;
     #endregion
 
     // Start is called before the first frame update
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour
         {
             HUDRegar.active = false;
         }
+
         #endregion
 
         Cursor.visible = false;
@@ -309,4 +311,20 @@ public class GameManager : MonoBehaviour
         Camera.main.GetComponent<MueblesComprados>().setMesitaArriba2C();
     }
     #endregion
+
+
+    public static void setPlantacionComprada()
+    {
+        zonaComprada = true;
+    }
+
+    public static bool getPlantacionComprada()
+    {
+        return zonaComprada;
+    }
+
+    public static void zonaNoComprada()
+    {
+        zonaComprada = false;
+    }
 }

@@ -6,11 +6,12 @@ public class GenerarCuboPuedePlantar : MonoBehaviour
 {
 
     Vector3 posicionCuboPuedePlantar;
-    GameObject cuboPuedePlantar,HUDPlantar;
+    GameObject cuboPuedePlantar;
+    public GameObject HUDPlantar;
 
     private void Start()
     {
-        HUDPlantar = GameObject.Find("HUD/HUDPlantar");
+
     }
 
     private void OnTriggerEnter(Collider other)

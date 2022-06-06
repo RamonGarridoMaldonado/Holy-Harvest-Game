@@ -28,6 +28,7 @@ public class Plantar : MonoBehaviour
             GameObject tomatera = GameObject.Find("Casa/Jugador/Personaje/Ch42_nonPBR/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/TomatoPlant_01");
             if (tomatera.active && this.GetComponent<BarraDeEstamina>().verEstaminaActual() >=10 )
             {
+                this.GetComponent<MovimientoJugador>().enabled = false;
                 animator.SetFloat("velocidad", 0f, 0.1f, Time.deltaTime);
                 animator.SetBool("plantando", true);
                 StartCoroutine("esperarAnimacion");
@@ -37,6 +38,7 @@ public class Plantar : MonoBehaviour
             GameObject PlantaMaizActivo = GameObject.Find("Casa/Jugador/Personaje/Ch42_nonPBR/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/Corn_Plant");
             if (PlantaMaizActivo.active && this.GetComponent<BarraDeEstamina>().verEstaminaActual() >=10)
             {
+                this.GetComponent<MovimientoJugador>().enabled = false;
                 animator.SetFloat("velocidad", 0f, 0.1f, Time.deltaTime);
                 animator.SetBool("plantando", true);
                 StartCoroutine("esperarAnimacion");
@@ -46,6 +48,7 @@ public class Plantar : MonoBehaviour
             GameObject PlantaBerenjenaActivo = GameObject.Find("Casa/Jugador/Personaje/Ch42_nonPBR/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/Eggplant_Plant");
             if (PlantaBerenjenaActivo.active && this.GetComponent<BarraDeEstamina>().verEstaminaActual() >=10) 
             {
+                this.GetComponent<MovimientoJugador>().enabled = false;
                 animator.SetFloat("velocidad", 0f, 0.1f, Time.deltaTime);
                 animator.SetBool("plantando", true);
                 StartCoroutine("esperarAnimacion");
@@ -91,7 +94,6 @@ public class Plantar : MonoBehaviour
         yield return new WaitForSeconds(3);
         animator.SetBool("plantando", false);
         animator.SetFloat("velocidad", 0f, 0.1f, Time.deltaTime);
-        //jugador.GetComponent<PlantarRegar>().enabled = true;
     }
 
     IEnumerator esperarPlantarTomate()
@@ -101,6 +103,7 @@ public class Plantar : MonoBehaviour
         Instantiate(PlantaTomatera, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("Tomatera (USE) 1");
         zonaPlantacion.GetComponent<zonaOcupada>().establecerOcupado();
+        this.GetComponent<MovimientoJugador>().enabled = true;
     }
 
     IEnumerator esperarPlantarMaiz()
@@ -110,6 +113,7 @@ public class Plantar : MonoBehaviour
         Instantiate(plantaMaiz, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("PlantaMaiz (USE) 2");
         zonaPlantacion.GetComponent<zonaOcupada>().establecerOcupado();
+        this.GetComponent<MovimientoJugador>().enabled = true;
     }
 
     IEnumerator esperarPlantarBerenjena()
@@ -119,6 +123,7 @@ public class Plantar : MonoBehaviour
         Instantiate(PlantaBerenjena, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("PlantaBerenjena (USE) 2");
         zonaPlantacion.GetComponent<zonaOcupada>().establecerOcupado();
+        this.GetComponent<MovimientoJugador>().enabled = true;
     }
 
 }

@@ -10,12 +10,13 @@ public class PlayfabManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject balon, planta, estanteriaLibros, lavador, librosAbajo;
-    static string email, pass;
+    static string email, pass, usuario;
 
     public void BotonRegistrar()
     {
         InputField emailInput = GameObject.Find("HUD/InputEmail").GetComponent<InputField>();
         InputField passInput = GameObject.Find("HUD/InputPassword").GetComponent<InputField>();
+        InputField NombreUsuarioInput = GameObject.Find("HUD/InputNombreUsuario").GetComponent<InputField>();
 
         if (passInput.text.Length < 6)
         {
@@ -26,6 +27,7 @@ public class PlayfabManager : MonoBehaviour
         {
             Email = emailInput.text,
             Password = passInput.text,
+            DisplayName = NombreUsuarioInput.text,
             RequireBothUsernameAndEmail = false
         };
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSucces, OnError);
@@ -40,13 +42,14 @@ public class PlayfabManager : MonoBehaviour
     public void botonAcceder()
     {
             InputField emailInput = GameObject.Find("HUD/InputEmail").GetComponent<InputField>();
+            InputField NombreUsuarioInput = GameObject.Find("HUD/InputPassword").GetComponent<InputField>();
             InputField passInput = GameObject.Find("HUD/InputPassword").GetComponent<InputField>();
             email = emailInput.text;
             pass = passInput.text;
             var request = new LoginWithEmailAddressRequest
             {
                 Email = emailInput.text,
-                Password = passInput.text
+                Password = passInput.text,
             };
             PlayFabClientAPI.LoginWithEmailAddress(request, LoginOnSucces, OnError);
     }
@@ -155,12 +158,13 @@ public class PlayfabManager : MonoBehaviour
     public void OnleaderboardGet (GetLeaderboardResult result)
     {
         Text textoPuntuacion = GameObject.Find("HUDClasificacion/TextoPuntuaciones").GetComponent<Text>();
+        textoPuntuacion.text = "";
 
             foreach (var item in result.Leaderboard)
             {
                 if (SceneManager.GetActiveScene().name.Equals("VerPuntuacion"))
                 {
-                    textoPuntuacion.text = textoPuntuacion.text + (item.Position + 1) + "               " + item.Profile.PlayerId + "               " + item.StatValue + "\n";
+                    textoPuntuacion.text = textoPuntuacion.text + (item.Position + 1) + "               " + item.DisplayName + "               " + item.StatValue + "\n";
                 }
                 Debug.Log(item.Position + 1 + " " + item.PlayFabId + " " + item.StatValue + "\n");
             }
@@ -290,6 +294,11 @@ public class PlayfabManager : MonoBehaviour
                     {
                         GameManager.activarLogro3();
                     }
+
+                    if (result.Data["ZonaComprada"].Value == "True")
+                    {
+                        GameManager.setPlantacionComprada();
+                    }
                 }
             }
             else
@@ -299,7 +308,7 @@ public class PlayfabManager : MonoBehaviour
         }
     }
 
-    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero, string balon, string planta, string estanterialibros, string lavador, string librosAbajo)
+    public void GuardarDatosJugador(string guardarEstamina, string guardarDinero, string balon, string planta, string estanterialibros, string lavador, string librosAbajo, string zonaComprada)
     {
         if (!SceneManager.GetActiveScene().name.Equals("VerPuntuacion") || !SceneManager.GetActiveScene().name.Equals("MenuInicial"))
         {
@@ -308,7 +317,7 @@ public class PlayfabManager : MonoBehaviour
                 Data = new Dictionary<string, string> {
                 {"Estamina", guardarEstamina },
                 {"Dinero", guardarDinero },
-
+                {"ZonaComprada", zonaComprada}
             }
             };
             PlayFabClientAPI.UpdateUserData(request, datosEnviados, OnError);

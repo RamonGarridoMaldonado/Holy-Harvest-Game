@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.1, y: 8.470377, z: -17.69}
+  m_LocalPosition: {x: 40.1, y: 8.470377, z: -35.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4064,6 +4064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &105146218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7368,6 +7369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &204222501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8054,6 +8056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &230462923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13695,6 +13698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &368392247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17516,37 +17520,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e36cf732b73e87f458b5e69d2c1f6417, type: 3}
---- !u!1 &470639160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 470639161}
-  m_Layer: 0
-  m_Name: Cultivos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &470639161
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470639160}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 64.29894, y: -1.9063699, z: -17.717873}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475776537
 GameObject:
   m_ObjectHideFlags: 0
@@ -17788,6 +17761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &483324363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20358,6 +20332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &564806932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21639,7 +21614,7 @@ Transform:
   - {fileID: 1049651590}
   - {fileID: 1930025502}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &599371406
 GameObject:
@@ -22290,13 +22265,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624236593}
-  m_LocalRotation: {x: -0.03819095, y: 0.95570886, z: 0.15397906, w: 0.24789615}
-  m_LocalPosition: {x: -38.319016, y: -171.51189, z: 395.88773}
+  m_LocalRotation: {x: 0.115651146, y: 0.16920188, z: 0.018080324, w: -0.9786055}
+  m_LocalPosition: {x: 10.82546, y: -100.1743, z: -68.37377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625770056
 GameObject:
@@ -22489,6 +22464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &631604920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24710,6 +24686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &682884767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25421,6 +25398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &717416252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26351,6 +26329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &735754749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29707,7 +29686,7 @@ Transform:
   - {fileID: 623397834}
   - {fileID: 1161134405}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &818652988
 GameObject:
@@ -30289,7 +30268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &830774597
 Transform:
   m_ObjectHideFlags: 0
@@ -30418,6 +30397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &833894614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36675,7 +36655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
       propertyPath: m_RootOrder
@@ -47927,17 +47907,17 @@ PrefabInstance:
     - target: {fileID: 2486273232662563651, guid: 4f934d09e972957fc9c095533f4761e6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6834295
+      value: 0.68342954
       objectReference: {fileID: 0}
     - target: {fileID: 2486273232662563651, guid: 4f934d09e972957fc9c095533f4761e6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.030031256
+      value: -0.030031253
       objectReference: {fileID: 0}
     - target: {fileID: 2486273232662563651, guid: 4f934d09e972957fc9c095533f4761e6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7286954
+      value: 0.72869533
       objectReference: {fileID: 0}
     - target: {fileID: 2486273232662563651, guid: 4f934d09e972957fc9c095533f4761e6,
         type: 3}
@@ -48407,6 +48387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &1459682447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51868,6 +51849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &1540288149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66580,6 +66562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clouds
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010237739742, guid: fe69c79d384eb4f4f944d4ec253d357a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012464943430, guid: fe69c79d384eb4f4f944d4ec253d357a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -69106,6 +69092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &1966422134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71721,6 +71708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &2054586474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73555,6 +73543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!114 &2106481867
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -29,6 +29,17 @@ public class ComprarTerrenoFinal : MonoBehaviour
     {
         HUDInventario = GameObject.Find("HUDInventario");
         TextoDinero = HUDInventario.transform.Find("TextoDinero").GetComponent<Text>();
+        print(GameManager.getPlantacionComprada());
+        if (GameManager.getPlantacionComprada())
+        {
+            Destroy(entrada1);
+            Destroy(entrada2);
+            Destroy(entrada3);
+            Destroy(entrada4);
+            Destroy(entrada5);
+            Destroy(entrada6);
+            Destroy(cartel);
+        }
     }
 
     private void Update()
@@ -40,7 +51,7 @@ public class ComprarTerrenoFinal : MonoBehaviour
 
     
     private void comprarT() {
-        if (GameManager.getDinero()>=precioTerreno) {
+        if (GameManager.getDinero()>=precioTerreno && !GameManager.getPlantacionComprada()) {
             Destroy(entrada1);
             Destroy(entrada2);
             Destroy(entrada3);
@@ -52,6 +63,7 @@ public class ComprarTerrenoFinal : MonoBehaviour
             GameManager.setRestarDinero(precioTerreno);
             TextoDinero.text = GameManager.getDinero().ToString() + " $";
             print ("Se ha comprado el terreno");
+            GameManager.setPlantacionComprada();
         } else {
             print ("no tienes suficiente dinero");
         }

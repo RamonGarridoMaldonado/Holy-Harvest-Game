@@ -43,13 +43,13 @@ public class AcariciarGallina : MonoBehaviour
 
     IEnumerator acariciar()
     {
+        this.GetComponent<movimientoGallina>().enabled = false;
         animator.SetBool("acariciando", true);
         jugador.transform.LookAt(this.transform);
-        this.GetComponent<movimientoGallina>().enabled = false;
         yield return new WaitForSeconds(8);
         this.GetComponent<generarHuevos>().setAcariciada();
-        this.GetComponent<movimientoGallina>().enabled = true;
         animator.SetBool("acariciando", false);
         animator.SetFloat("velocidad", 0.5f, 0.1f, Time.deltaTime);
+        this.GetComponent<movimientoGallina>().enabled = true;
     }
 }

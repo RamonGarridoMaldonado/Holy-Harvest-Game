@@ -5837,6 +5837,7 @@ GameObject:
   - component: {fileID: 1155988737}
   - component: {fileID: 1155988736}
   - component: {fileID: 1155988741}
+  - component: {fileID: 1155988742}
   m_Layer: 0
   m_Name: Toon Chicken (3)
   m_TagString: gallina
@@ -5960,6 +5961,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   huevo: {fileID: 4568933615484949013, guid: 51fbbff78be712c4ea7b4b4fab892281, type: 3}
+--- !u!114 &1155988742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155988734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c35f48234792854da517cab9b9ef7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 166541757}
+  HUDacariciar: {fileID: 1580631753}
 --- !u!1 &1157289284
 GameObject:
   m_ObjectHideFlags: 0
@@ -12082,7 +12097,7 @@ PrefabInstance:
     - target: {fileID: 2486273233497150790, guid: 4f934d09e972957fc9c095533f4761e6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.011299545
+      value: -0.011299543
       objectReference: {fileID: 0}
     - target: {fileID: 2486273233497150790, guid: 4f934d09e972957fc9c095533f4761e6,
         type: 3}
@@ -12092,7 +12107,7 @@ PrefabInstance:
     - target: {fileID: 2486273233497150790, guid: 4f934d09e972957fc9c095533f4761e6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.023287764
+      value: 0.023287762
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2486273234117608684, guid: 4f934d09e972957fc9c095533f4761e6, type: 3}
@@ -13079,6 +13094,7 @@ MonoBehaviour:
   MaizPlanta: {fileID: 0}
   BerenjenaPlanta: {fileID: 0}
   regadera: {fileID: 0}
+  berenjena: {fileID: 0}
   TextoDinero: {fileID: 0}
 --- !u!4 &2098858144
 Transform:
@@ -13301,7 +13317,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145609782}
-  m_LocalRotation: {x: -0.011299547, y: 0.89938354, z: 0.023287768, w: 0.4363934}
+  m_LocalRotation: {x: -0.011299545, y: 0.89938354, z: 0.023287768, w: 0.4363934}
   m_LocalPosition: {x: -46.403698, y: 88.49, z: -67.943146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13749,6 +13765,7 @@ GameObject:
   - component: {fileID: 95943282483496194}
   - component: {fileID: 95943282483496195}
   - component: {fileID: 95943282483496196}
+  - component: {fileID: 95943282483496197}
   m_Layer: 0
   m_Name: Toon Chicken
   m_TagString: gallina
@@ -13771,6 +13788,7 @@ GameObject:
   - component: {fileID: 95943282592735222}
   - component: {fileID: 95943282592735223}
   - component: {fileID: 95943282592735224}
+  - component: {fileID: 95943282592735225}
   m_Layer: 0
   m_Name: Toon Chicken (1)
   m_TagString: gallina
@@ -13793,6 +13811,7 @@ GameObject:
   - component: {fileID: 95943283610090713}
   - component: {fileID: 95943283610090714}
   - component: {fileID: 95943283610090715}
+  - component: {fileID: 95943283610090716}
   m_Layer: 0
   m_Name: Toon Chicken (2)
   m_TagString: gallina
@@ -15797,6 +15816,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   huevo: {fileID: 4568933615484949013, guid: 51fbbff78be712c4ea7b4b4fab892281, type: 3}
+--- !u!114 &95943282483496197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311290578501571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c35f48234792854da517cab9b9ef7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 166541757}
+  HUDacariciar: {fileID: 1580631753}
 --- !u!95 &95943282592735219
 Animator:
   serializedVersion: 4
@@ -15874,6 +15907,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   huevo: {fileID: 4568933615484949013, guid: 51fbbff78be712c4ea7b4b4fab892281, type: 3}
+--- !u!114 &95943282592735225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311290754933967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c35f48234792854da517cab9b9ef7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 166541757}
+  HUDacariciar: {fileID: 1580631753}
 --- !u!95 &95943283610090710
 Animator:
   serializedVersion: 4
@@ -15951,6 +15998,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   huevo: {fileID: 4568933615484949013, guid: 51fbbff78be712c4ea7b4b4fab892281, type: 3}
+--- !u!114 &95943283610090716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311291835320298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c35f48234792854da517cab9b9ef7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 166541757}
+  HUDacariciar: {fileID: 1580631753}
 --- !u!137 &137954049672646528
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class Dormir : MonoBehaviour
     public GameObject HUDDormir,jugador;
     
     float tiempoPuedeDormir = 20;
-    bool puedeDormir = true;
+    bool puedeDormir = false;
     public TextMeshPro textoContador;
     TextMeshPro textoClonado;
     int segundos, minutos, horas, segundosMostrar;
