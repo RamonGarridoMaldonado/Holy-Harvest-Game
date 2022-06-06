@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     Bolsa bolsa;
     static bool logro1Conseguido = false, logro2Conseguido = false, logro3Conseguido = false;
     static bool zonaComprada = false;
+    public static Objeto[] objetosInventario;
+    public static Objeto tomateraInventario, tomateInventario, regaderaInventario, PlantaMaizInventario, maizInventario, PlantaBerenjenaInventario, berenjenaInventario;
+    public static bool actualizar = false;
     #endregion
 
     // Start is called before the first frame update
@@ -53,12 +56,25 @@ public class GameManager : MonoBehaviour
 
         #endregion
 
+        #region objetos
+
+        objetosInventario = new Objeto[7];
+
+        tomateInventario = new Objeto("Tomate", 0);
+        tomateraInventario = new Objeto("Tomatera", 0);
+        regaderaInventario = new Objeto("Regadera",0);
+        PlantaMaizInventario = new Objeto("Planta Maiz", 0);
+        maizInventario = new Objeto("Maiz", 0);
+        PlantaBerenjenaInventario = new Objeto("Planta Berenjena", 0);
+        berenjenaInventario = new Objeto("Berenjena", 0);
+
+        objetosInventario[0] = tomateInventario; objetosInventario[1] = tomateraInventario; objetosInventario[2] = regaderaInventario;
+        objetosInventario[3] = PlantaMaizInventario; objetosInventario[4] = maizInventario; objetosInventario[5] = PlantaBerenjenaInventario;
+        objetosInventario[6] = berenjenaInventario;
+
+        #endregion
+
         Cursor.visible = false;
-        bolsa.verificarSlotVacio(TomateraPlanta, "Tomatera (USE) 1", 10);
-        bolsa.verificarSlotVacio(MaizPlanta, "PlantaMaiz (USE) 2", 10);
-        bolsa.verificarSlotVacio(BerenjenaPlanta, "PlantaBerenjena (USE) 2", 10);
-        bolsa.verificarSlotVacio(regadera, "Regadera (USE)", 100);
-        //bolsa.verificarSlotVacio(berenjena, "Berenjena (USE) 1", 30);
     }
     // Update is called once per frame
     void Update()
@@ -66,6 +82,14 @@ public class GameManager : MonoBehaviour
         if (dinero<=0) {
             bolsa.verificarSlotVacio(TomateraPlanta, "Tomatera (USE)", 5);
             dinero = 1;
+        }
+        if (actualizar)
+        {
+            bolsa.verificarSlotVacio(TomateraPlanta, "Tomatera (USE) 1", objetosInventario[1].getCantidad());
+            bolsa.verificarSlotVacio(MaizPlanta, "PlantaMaiz (USE) 2", objetosInventario[3].getCantidad());
+            bolsa.verificarSlotVacio(BerenjenaPlanta, "PlantaBerenjena (USE) 2", objetosInventario[5].getCantidad());
+            bolsa.verificarSlotVacio(regadera, "Regadera (USE)", objetosInventario[2].getCantidad());
+            actualizar = false;
         }
     }
 
@@ -126,11 +150,6 @@ public class GameManager : MonoBehaviour
 
     }
     #endregion
-
-    public Dictionary<string,int> obtenerBolsa()
-    {
-        return manager.GetComponent<Bolsa>().obtenerObjetosBolsa();
-    }
 
     #region logros
 
@@ -312,7 +331,7 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-
+    #region Plantacion
     public static void setPlantacionComprada()
     {
         zonaComprada = true;
@@ -327,4 +346,20 @@ public class GameManager : MonoBehaviour
     {
         zonaComprada = false;
     }
+
+    #endregion
+
+    #region Inventario
+
+    public static Objeto[] obtenerObjetosInventario()
+    {
+        return objetosInventario;
+    }
+
+    public static void setActualizar()
+    {
+        actualizar = true;
+    }
+
+    #endregion
 }

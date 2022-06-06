@@ -102,6 +102,7 @@ public class Plantar : MonoBehaviour
         this.GetComponent<BarraDeEstamina>().restarEstamina(10);
         Instantiate(PlantaTomatera, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("Tomatera (USE) 1");
+        GameManager.objetosInventario[1].restarCantidad(1);
         zonaPlantacion.GetComponent<zonaOcupada>().establecerOcupado();
         this.GetComponent<MovimientoJugador>().enabled = true;
     }
@@ -112,6 +113,7 @@ public class Plantar : MonoBehaviour
         this.GetComponent<BarraDeEstamina>().restarEstamina(10);
         Instantiate(plantaMaiz, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("PlantaMaiz (USE) 2");
+        GameManager.objetosInventario[3].restarCantidad(1);
         zonaPlantacion.GetComponent<zonaOcupada>().establecerOcupado();
         this.GetComponent<MovimientoJugador>().enabled = true;
     }
@@ -122,6 +124,7 @@ public class Plantar : MonoBehaviour
         this.GetComponent<BarraDeEstamina>().restarEstamina(10);
         Instantiate(PlantaBerenjena, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("PlantaBerenjena (USE) 2");
+        GameManager.objetosInventario[5].restarCantidad(1);
         zonaPlantacion.GetComponent<zonaOcupada>().establecerOcupado();
         this.GetComponent<MovimientoJugador>().enabled = true;
     }

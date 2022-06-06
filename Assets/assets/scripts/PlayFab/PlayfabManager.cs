@@ -5,6 +5,7 @@ using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Newtonsoft.Json;
 
 public class PlayfabManager : MonoBehaviour
 {
@@ -95,6 +96,7 @@ public class PlayfabManager : MonoBehaviour
     void OnSuccess(LoginResult result)
     {
         CargarDatosJugador();
+        CargarInventario();
         Debug.Log("Se ha realizado el Login correctamente / Cuenta creada");
     }
 
@@ -254,6 +256,11 @@ public class PlayfabManager : MonoBehaviour
 
                 else if (SceneManager.GetActiveScene().name.Equals("Granja 2"))
                 {
+                    if (result.Data["ZonaComprada"].Value == "True")
+                    {
+                        GameManager.setPlantacionComprada();
+                    }
+
                     if (result.Data["balon"].Value == "True")
                     {
                         Camera.main.GetComponent<MueblesComprados>().balonComprado();
@@ -294,11 +301,6 @@ public class PlayfabManager : MonoBehaviour
                     {
                         GameManager.activarLogro3();
                     }
-
-                    if (result.Data["ZonaComprada"].Value == "True")
-                    {
-                        GameManager.setPlantacionComprada();
-                    }
                 }
             }
             else
@@ -312,11 +314,24 @@ public class PlayfabManager : MonoBehaviour
     {
         if (!SceneManager.GetActiveScene().name.Equals("VerPuntuacion") || !SceneManager.GetActiveScene().name.Equals("MenuInicial"))
         {
+            int cantidadMuebles = 0;
+            if (balon.Equals("True")) cantidadMuebles++;
+            if (planta.Equals("True")) cantidadMuebles++;
+            if (estanterialibros.Equals("True")) cantidadMuebles++;
+            if (lavador.Equals("True")) cantidadMuebles++;
+            if (librosAbajo.Equals("True")) cantidadMuebles++;
+
             var request = new UpdateUserDataRequest
             {
                 Data = new Dictionary<string, string> {
                 {"Estamina", guardarEstamina },
                 {"Dinero", guardarDinero },
+                {"balon", balon},
+                {"planta",planta},
+                {"estanteriaLibros",estanterialibros },
+                {"lavador",lavador },
+                {"librosAbajo", librosAbajo},
+                {"cantidadMuebles", cantidadMuebles.ToString() },
                 {"ZonaComprada", zonaComprada}
             }
             };
@@ -324,7 +339,7 @@ public class PlayfabManager : MonoBehaviour
         }
     }
 
-    public void GuardarDatosJugadorPueblo (string guardarEstamina, string guardarDinero, string balon, string planta, string estanterialibros, string lavador, string librosAbajo)
+    public void GuardarDatosJugadorPueblo (string guardarEstamina, string guardarDinero, string balon, string planta, string estanterialibros, string lavador, string librosAbajo, string zonaComprada)
     {
         if (!SceneManager.GetActiveScene().name.Equals("VerPuntuacion") || !SceneManager.GetActiveScene().name.Equals("MenuInicial"))
         {
@@ -345,11 +360,46 @@ public class PlayfabManager : MonoBehaviour
                     {"estanteriaLibros",estanterialibros },
                     {"lavador",lavador },
                     {"librosAbajo", librosAbajo},
-                    {"cantidadMuebles", cantidadMuebles.ToString() }
+                    {"cantidadMuebles", cantidadMuebles.ToString() },
+                    {"ZonaComprada", zonaComprada}
                 }
             };
             PlayFabClientAPI.UpdateUserData(request, datosEnviados, OnError);
         }
+    }
+
+    public void guardarInventario()
+    {
+        Objeto[] objetos = GameManager.obtenerObjetosInventario();
+        List<Objeto> objetosLista = new List<Objeto>();
+        foreach (var item in objetos)
+        {
+            objetosLista.Add(item);
+        }
+        var request = new UpdateUserDataRequest
+        {
+            Data = new Dictionary<string, string>
+            {
+                {"Inventario", JsonConvert.SerializeObject(objetosLista)}
+            }
+        };
+        PlayFabClientAPI.UpdateUserData(request, datosEnviados, OnError);
+    }
+
+    public void CargarInventario()
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), OnInventarioRecivido, OnError);
+    }
+
+    void OnInventarioRecivido(GetUserDataResult result)
+    {
+        List<Objeto> objetos = JsonConvert.DeserializeObject<List<Objeto>>(result.Data["Inventario"].Value);
+            for (int i=0;i<7;i++)
+            {
+                print(objetos[i].getCantidad());
+                GameManager.objetosInventario[i].establecerNuevaCantidad(objetos[i].getCantidad());
+            }
+        GameManager.setActualizar();
     }
 
     void datosEnviados(UpdateUserDataResult result)

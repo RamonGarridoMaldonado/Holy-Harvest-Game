@@ -10,6 +10,7 @@ public class Salir : MonoBehaviour
         PlayfabManager pfb = new PlayfabManager();
         pfb.EnviarDineroATabla();
         pfb.GuardarDatosJugador(GameManager.obtenerEstamina().ToString(), GameManager.getDinero().ToString(), GameManager.getBalonComprado(), GameManager.getPlantaComprado(), GameManager.getEstanteriaLibros(), GameManager.getLavador(), GameManager.getLibrosAbajo(),GameManager.getPlantacionComprada().ToString());
+        pfb.guardarInventario();
         SceneManager.LoadScene("MenuInicial");
     }
 
@@ -17,7 +18,8 @@ public class Salir : MonoBehaviour
     {
         PlayfabManager pfb = new PlayfabManager();
         pfb.EnviarDineroATabla();
-        pfb.GuardarDatosJugadorPueblo(GameManager.obtenerEstamina().ToString(), GameManager.getDinero().ToString(), GameManager.getBalonComprado(), GameManager.getPlantaComprado(), GameManager.getEstanteriaLibros(), GameManager.getLavador(), GameManager.getLibrosAbajo());
+        pfb.GuardarDatosJugadorPueblo(GameManager.obtenerEstamina().ToString(), GameManager.getDinero().ToString(), GameManager.getBalonComprado(), GameManager.getPlantaComprado(), GameManager.getEstanteriaLibros(), GameManager.getLavador(), GameManager.getLibrosAbajo(), GameManager.getPlantacionComprada().ToString());
+        pfb.guardarInventario();
         SceneManager.LoadScene("MenuInicial");
     }
 }

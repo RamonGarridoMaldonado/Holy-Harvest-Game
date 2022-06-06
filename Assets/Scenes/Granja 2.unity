@@ -568,6 +568,8 @@ GameObject:
   - component: {fileID: 17816988}
   - component: {fileID: 17816990}
   - component: {fileID: 17816989}
+  - component: {fileID: 17816992}
+  - component: {fileID: 17816991}
   m_Layer: 9
   m_Name: Cube (45)
   m_TagString: triggerPlantacionPruebas
@@ -645,6 +647,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &17816991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17816987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &17816992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17816987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &18043188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3209,8 @@ GameObject:
   - component: {fileID: 83173009}
   - component: {fileID: 83173011}
   - component: {fileID: 83173010}
+  - component: {fileID: 83173013}
+  - component: {fileID: 83173012}
   m_Layer: 9
   m_Name: Cube (25)
   m_TagString: triggerPlantacionPruebas
@@ -3258,6 +3288,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &83173012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83173008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &83173013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83173008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &85121994
 GameObject:
   m_ObjectHideFlags: 0
@@ -5722,6 +5778,8 @@ GameObject:
   - component: {fileID: 151761886}
   - component: {fileID: 151761888}
   - component: {fileID: 151761887}
+  - component: {fileID: 151761890}
+  - component: {fileID: 151761889}
   m_Layer: 9
   m_Name: Cube (23)
   m_TagString: triggerPlantacionPruebas
@@ -5799,6 +5857,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &151761889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151761885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &151761890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151761885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &153373029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15609,6 +15693,8 @@ GameObject:
   - component: {fileID: 418108255}
   - component: {fileID: 418108257}
   - component: {fileID: 418108256}
+  - component: {fileID: 418108259}
+  - component: {fileID: 418108258}
   m_Layer: 9
   m_Name: Cube (34)
   m_TagString: triggerPlantacionPruebas
@@ -15686,6 +15772,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &418108258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418108254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &418108259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418108254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &419167146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16281,6 +16393,8 @@ GameObject:
   - component: {fileID: 429217420}
   - component: {fileID: 429217422}
   - component: {fileID: 429217421}
+  - component: {fileID: 429217424}
+  - component: {fileID: 429217423}
   m_Layer: 9
   m_Name: Cube (19)
   m_TagString: triggerPlantacionPruebas
@@ -16358,6 +16472,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &429217423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429217419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
+--- !u!114 &429217424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429217419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
 --- !u!1001 &433101151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18475,6 +18615,8 @@ GameObject:
   - component: {fileID: 506003137}
   - component: {fileID: 506003139}
   - component: {fileID: 506003138}
+  - component: {fileID: 506003141}
+  - component: {fileID: 506003140}
   m_Layer: 9
   m_Name: Cube (26)
   m_TagString: triggerPlantacionPruebas
@@ -18552,6 +18694,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &506003140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506003136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &506003141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506003136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &508734078
 GameObject:
   m_ObjectHideFlags: 0
@@ -20526,6 +20694,8 @@ GameObject:
   - component: {fileID: 570505198}
   - component: {fileID: 570505200}
   - component: {fileID: 570505199}
+  - component: {fileID: 570505202}
+  - component: {fileID: 570505201}
   m_Layer: 9
   m_Name: Cube (38)
   m_TagString: triggerPlantacionPruebas
@@ -20603,6 +20773,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &570505201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570505197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &570505202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570505197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &571799704
 GameObject:
   m_ObjectHideFlags: 0
@@ -24328,6 +24524,8 @@ GameObject:
   - component: {fileID: 672560250}
   - component: {fileID: 672560252}
   - component: {fileID: 672560251}
+  - component: {fileID: 672560254}
+  - component: {fileID: 672560253}
   m_Layer: 9
   m_Name: Cube (46)
   m_TagString: triggerPlantacionPruebas
@@ -24405,6 +24603,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &672560253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672560249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &672560254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672560249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &675206416
 GameObject:
   m_ObjectHideFlags: 0
@@ -25151,6 +25375,8 @@ GameObject:
   - component: {fileID: 701427676}
   - component: {fileID: 701427678}
   - component: {fileID: 701427677}
+  - component: {fileID: 701427680}
+  - component: {fileID: 701427679}
   m_Layer: 9
   m_Name: Cube (33)
   m_TagString: triggerPlantacionPruebas
@@ -25228,6 +25454,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &701427679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701427675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &701427680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701427675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &702529059
 GameObject:
   m_ObjectHideFlags: 0
@@ -25766,6 +26018,8 @@ GameObject:
   - component: {fileID: 723921970}
   - component: {fileID: 723921972}
   - component: {fileID: 723921971}
+  - component: {fileID: 723921974}
+  - component: {fileID: 723921973}
   m_Layer: 9
   m_Name: Cube (29)
   m_TagString: triggerPlantacionPruebas
@@ -25843,6 +26097,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &723921973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723921969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &723921974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723921969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &727536891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27133,6 +27413,8 @@ GameObject:
   - component: {fileID: 767249898}
   - component: {fileID: 767249900}
   - component: {fileID: 767249899}
+  - component: {fileID: 767249902}
+  - component: {fileID: 767249901}
   m_Layer: 9
   m_Name: Cube (18)
   m_TagString: triggerPlantacionPruebas
@@ -27210,6 +27492,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &767249901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767249897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &767249902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767249897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &768962706
 GameObject:
   m_ObjectHideFlags: 0
@@ -27472,6 +27780,8 @@ GameObject:
   - component: {fileID: 771322334}
   - component: {fileID: 771322336}
   - component: {fileID: 771322335}
+  - component: {fileID: 771322338}
+  - component: {fileID: 771322337}
   m_Layer: 9
   m_Name: Cube (42)
   m_TagString: triggerPlantacionPruebas
@@ -27549,6 +27859,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &771322337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771322333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &771322338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771322333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &774137158
 GameObject:
   m_ObjectHideFlags: 0
@@ -27819,6 +28155,8 @@ GameObject:
   - component: {fileID: 788209135}
   - component: {fileID: 788209137}
   - component: {fileID: 788209136}
+  - component: {fileID: 788209139}
+  - component: {fileID: 788209138}
   m_Layer: 9
   m_Name: Cube (27)
   m_TagString: triggerPlantacionPruebas
@@ -27896,6 +28234,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &788209138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788209134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &788209139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788209134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &788873713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31112,6 +31476,8 @@ GameObject:
   - component: {fileID: 864018807}
   - component: {fileID: 864018809}
   - component: {fileID: 864018808}
+  - component: {fileID: 864018811}
+  - component: {fileID: 864018810}
   m_Layer: 9
   m_Name: Cube (31)
   m_TagString: triggerPlantacionPruebas
@@ -31189,6 +31555,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &864018810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864018806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &864018811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864018806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &865934752
 GameObject:
   m_ObjectHideFlags: 0
@@ -31312,6 +31704,8 @@ GameObject:
   - component: {fileID: 872297620}
   - component: {fileID: 872297622}
   - component: {fileID: 872297621}
+  - component: {fileID: 872297624}
+  - component: {fileID: 872297623}
   m_Layer: 9
   m_Name: Cube (35)
   m_TagString: triggerPlantacionPruebas
@@ -31389,6 +31783,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &872297623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872297619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &872297624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872297619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &872555127
 GameObject:
   m_ObjectHideFlags: 0
@@ -32489,6 +32909,8 @@ GameObject:
   - component: {fileID: 911703763}
   - component: {fileID: 911703765}
   - component: {fileID: 911703764}
+  - component: {fileID: 911703767}
+  - component: {fileID: 911703766}
   m_Layer: 9
   m_Name: Cube (43)
   m_TagString: triggerPlantacionPruebas
@@ -32566,6 +32988,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &911703766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911703762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &911703767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911703762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &913588772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39958,6 +40406,8 @@ GameObject:
   - component: {fileID: 1150341436}
   - component: {fileID: 1150341438}
   - component: {fileID: 1150341437}
+  - component: {fileID: 1150341440}
+  - component: {fileID: 1150341439}
   m_Layer: 9
   m_Name: Cube (39)
   m_TagString: triggerPlantacionPruebas
@@ -40035,6 +40485,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1150341439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150341435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1150341440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150341435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &1155308633
 GameObject:
   m_ObjectHideFlags: 0
@@ -41707,6 +42183,8 @@ GameObject:
   - component: {fileID: 1237092145}
   - component: {fileID: 1237092147}
   - component: {fileID: 1237092146}
+  - component: {fileID: 1237092149}
+  - component: {fileID: 1237092148}
   m_Layer: 9
   m_Name: Cube (40)
   m_TagString: triggerPlantacionPruebas
@@ -41784,6 +42262,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1237092148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237092144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1237092149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237092144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &1239998211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43241,6 +43745,8 @@ GameObject:
   - component: {fileID: 1305776568}
   - component: {fileID: 1305776570}
   - component: {fileID: 1305776569}
+  - component: {fileID: 1305776572}
+  - component: {fileID: 1305776571}
   m_Layer: 9
   m_Name: Cube (20)
   m_TagString: triggerPlantacionPruebas
@@ -43318,6 +43824,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1305776571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305776567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1305776572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305776567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &1306254522
 GameObject:
   m_ObjectHideFlags: 0
@@ -44345,6 +44877,8 @@ GameObject:
   - component: {fileID: 1351385795}
   - component: {fileID: 1351385797}
   - component: {fileID: 1351385796}
+  - component: {fileID: 1351385799}
+  - component: {fileID: 1351385798}
   m_Layer: 9
   m_Name: Cube (22)
   m_TagString: triggerPlantacionPruebas
@@ -44422,6 +44956,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1351385798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351385794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1351385799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351385794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &1352267585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45556,6 +46116,8 @@ GameObject:
   - component: {fileID: 1382388477}
   - component: {fileID: 1382388479}
   - component: {fileID: 1382388478}
+  - component: {fileID: 1382388481}
+  - component: {fileID: 1382388480}
   m_Layer: 9
   m_Name: Cube (41)
   m_TagString: triggerPlantacionPruebas
@@ -45633,6 +46195,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1382388480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382388476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1382388481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382388476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &1382875009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46103,7 +46691,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387449693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.3, y: -8.23199, z: 1.6}
+  m_LocalPosition: {x: 11.3, y: -8.36, z: 1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50363,6 +50951,8 @@ GameObject:
   - component: {fileID: 1506818157}
   - component: {fileID: 1506818159}
   - component: {fileID: 1506818158}
+  - component: {fileID: 1506818161}
+  - component: {fileID: 1506818160}
   m_Layer: 9
   m_Name: Cube (17)
   m_TagString: triggerPlantacionPruebas
@@ -50440,6 +51030,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1506818160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506818156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
+--- !u!114 &1506818161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506818156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
 --- !u!1001 &1507275069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52329,6 +52945,8 @@ GameObject:
   - component: {fileID: 1552786212}
   - component: {fileID: 1552786214}
   - component: {fileID: 1552786213}
+  - component: {fileID: 1552786216}
+  - component: {fileID: 1552786215}
   m_Layer: 9
   m_Name: Cube (37)
   m_TagString: triggerPlantacionPruebas
@@ -52406,6 +53024,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1552786215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552786211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1552786216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552786211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &1555484873
 GameObject:
   m_ObjectHideFlags: 0
@@ -54798,6 +55442,8 @@ GameObject:
   - component: {fileID: 1648571522}
   - component: {fileID: 1648571524}
   - component: {fileID: 1648571523}
+  - component: {fileID: 1648571526}
+  - component: {fileID: 1648571525}
   m_Layer: 9
   m_Name: Cube (28)
   m_TagString: triggerPlantacionPruebas
@@ -54875,6 +55521,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1648571525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648571521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1648571526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648571521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &1648919439
 GameObject:
   m_ObjectHideFlags: 0
@@ -67306,6 +67978,8 @@ GameObject:
   - component: {fileID: 1898265222}
   - component: {fileID: 1898265224}
   - component: {fileID: 1898265223}
+  - component: {fileID: 1898265226}
+  - component: {fileID: 1898265225}
   m_Layer: 9
   m_Name: Cube (36)
   m_TagString: triggerPlantacionPruebas
@@ -67383,6 +68057,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1898265225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898265221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1898265226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898265221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &1898753392
 GameObject:
   m_ObjectHideFlags: 0
@@ -67538,6 +68238,8 @@ GameObject:
   - component: {fileID: 1910966646}
   - component: {fileID: 1910966648}
   - component: {fileID: 1910966647}
+  - component: {fileID: 1910966650}
+  - component: {fileID: 1910966649}
   m_Layer: 9
   m_Name: Cube (32)
   m_TagString: triggerPlantacionPruebas
@@ -67615,6 +68317,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1910966649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910966645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1910966650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910966645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &1924426039
 GameObject:
   m_ObjectHideFlags: 0
@@ -69399,6 +70127,8 @@ GameObject:
   - component: {fileID: 1976087909}
   - component: {fileID: 1976087911}
   - component: {fileID: 1976087910}
+  - component: {fileID: 1976087913}
+  - component: {fileID: 1976087912}
   m_Layer: 9
   m_Name: Cube (30)
   m_TagString: triggerPlantacionPruebas
@@ -69476,6 +70206,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1976087912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976087908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &1976087913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976087908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1 &1977373298
 GameObject:
   m_ObjectHideFlags: 0
@@ -72785,6 +73541,8 @@ GameObject:
   - component: {fileID: 2090928094}
   - component: {fileID: 2090928096}
   - component: {fileID: 2090928095}
+  - component: {fileID: 2090928098}
+  - component: {fileID: 2090928097}
   m_Layer: 9
   m_Name: Cube (21)
   m_TagString: triggerPlantacionPruebas
@@ -72862,6 +73620,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2090928097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090928093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
+--- !u!114 &2090928098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090928093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
 --- !u!1001 &2091503475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74487,6 +75271,8 @@ GameObject:
   - component: {fileID: 2129442270}
   - component: {fileID: 2129442272}
   - component: {fileID: 2129442271}
+  - component: {fileID: 2129442274}
+  - component: {fileID: 2129442273}
   m_Layer: 9
   m_Name: Cube (44)
   m_TagString: triggerPlantacionPruebas
@@ -74564,6 +75350,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2129442273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129442269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &2129442274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129442269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &2130197074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74917,6 +75729,8 @@ GameObject:
   - component: {fileID: 2137642420}
   - component: {fileID: 2137642422}
   - component: {fileID: 2137642421}
+  - component: {fileID: 2137642424}
+  - component: {fileID: 2137642423}
   m_Layer: 9
   m_Name: Cube (24)
   m_TagString: triggerPlantacionPruebas
@@ -74994,6 +75808,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2137642423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137642419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb7aa9bb77276f40971e0e8ba68e901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ocupado: 0
+--- !u!114 &2137642424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137642419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddedc1b0a6b68d479ae3f6bc8953197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUDPlantar: {fileID: 2072850265}
 --- !u!1001 &2139217712
 PrefabInstance:
   m_ObjectHideFlags: 0

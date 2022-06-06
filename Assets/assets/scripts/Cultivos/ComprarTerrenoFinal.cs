@@ -12,6 +12,7 @@ public class ComprarTerrenoFinal : MonoBehaviour
     GameObject HUDInventario;
     private bool sePuedeComprar = false;
     public int precioTerreno;
+    private bool zonaDestruida = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,8 +30,15 @@ public class ComprarTerrenoFinal : MonoBehaviour
     {
         HUDInventario = GameObject.Find("HUDInventario");
         TextoDinero = HUDInventario.transform.Find("TextoDinero").GetComponent<Text>();
-        print(GameManager.getPlantacionComprada());
-        if (GameManager.getPlantacionComprada())
+    }
+
+    private void Update()
+    {
+         if (Input.GetKeyDown(KeyCode.E) && (GameManager.getDinero()>= precioTerreno) && sePuedeComprar) {
+            comprarT();
+         }
+
+        if (GameManager.getPlantacionComprada() && !zonaDestruida)
         {
             Destroy(entrada1);
             Destroy(entrada2);
@@ -39,15 +47,9 @@ public class ComprarTerrenoFinal : MonoBehaviour
             Destroy(entrada5);
             Destroy(entrada6);
             Destroy(cartel);
+            zonaDestruida = true;
         }
     }
-
-    private void Update()
-    {
-         if (Input.GetKeyDown(KeyCode.E) && (GameManager.getDinero()>= precioTerreno) && sePuedeComprar) {
-            comprarT();
-         }
-     }
 
     
     private void comprarT() {
