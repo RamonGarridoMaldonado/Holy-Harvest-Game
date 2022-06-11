@@ -69,17 +69,7 @@ public class Bolsa : MonoBehaviour
         for (int i=0;i<slots.Length;i++) {
             print(nombreItem);
             if (slots[i].transform.GetChild(0).gameObject.name == nombreItem) {
-                print(slots[i].transform.GetChild(0).gameObject.name + " " + nombreItem);
-                foreach (var objectos in objetosBolsa)
-                {
-                    print (objectos.Key +" Cantidad: "+ objectos.Value);
-                }
                 objetosBolsa[nombreItem]--;
-                print("\n\n");
-                foreach (var objectos in objetosBolsa)
-                {
-                    print(objectos.Key + " Cantidad: " + objectos.Value);
-                }
                 textoCantidad = slots[i].GetComponentInChildren<Text>();
                 textoCantidad.text = objetosBolsa[nombreItem].ToString();
                 if (objetosBolsa[nombreItem] <= 0) {

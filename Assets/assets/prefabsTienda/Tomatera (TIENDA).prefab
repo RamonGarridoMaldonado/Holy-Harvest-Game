@@ -227,11 +227,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ceea6a1d665a43d987da9b896a01a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToAdd: {fileID: 7406032473255469047, guid: 170728c9049fad04299ea1d2f38bb5f0,
+  itemToAdd: {fileID: 7406032473255469047, guid: ce65940a0d487a899b8c4bd9a1bf3072,
     type: 3}
   cantidadObjeto: 1
   HUDInventario: {fileID: 0}
   TextoDinero: {fileID: 0}
   nombreObjeto: 
   precioVenta: 10
-  precioCompra: 50
+  precioCompra: 150

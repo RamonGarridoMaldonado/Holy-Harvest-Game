@@ -76,7 +76,6 @@ public class TemporizadorCultivos : MonoBehaviour
     {
         if (!regada)
         {
-            //jugador.GetComponent<BarraDeEstamina>().restarEstamina(10);
             this.regada = true;
             print("regada");
             this.tiempoCosechar -=  4f;

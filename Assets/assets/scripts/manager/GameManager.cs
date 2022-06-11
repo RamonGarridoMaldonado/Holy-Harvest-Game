@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public static Objeto[] objetosInventario;
     public static Objeto tomateraInventario, tomateInventario, regaderaInventario, PlantaMaizInventario, maizInventario, PlantaBerenjenaInventario, berenjenaInventario;
     public static bool actualizar = false;
+    public GameObject tomateParaVender, MaizParaVender, BerenjenaParaVender, HuevoParaVender;
     #endregion
 
     // Start is called before the first frame update
@@ -73,6 +74,11 @@ public class GameManager : MonoBehaviour
         objetosInventario[6] = berenjenaInventario;
 
         #endregion
+
+        bolsa.verificarSlotVacio(tomateParaVender, "Tomate (USE)", 15);
+        bolsa.verificarSlotVacio(MaizParaVender, "Maiz (USE)", 15);
+        bolsa.verificarSlotVacio(BerenjenaParaVender, "Berenjena (USE) 1", 15);
+        bolsa.verificarSlotVacio(HuevoParaVender, "Huevo (USE) 2", 15);
 
         Cursor.visible = false;
     }

@@ -25,10 +25,10 @@ public class generarHuevos : MonoBehaviour
         int tiempoAleatorio = 0;
         if (!acariciada)
         {
-            tiempoAleatorio = UnityEngine.Random.Range(20, 45);
+            tiempoAleatorio = UnityEngine.Random.Range(40, 60);
         }else
         {
-            tiempoAleatorio = UnityEngine.Random.Range(15, 30);
+            tiempoAleatorio = UnityEngine.Random.Range(30, 50);
 
         }
         Vector3 posHuevo = new Vector3(transform.position.x, transform.position.y+0.1f, transform.position.z);
