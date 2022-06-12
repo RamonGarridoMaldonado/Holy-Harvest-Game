@@ -31,7 +31,7 @@ public class SalirCorral : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && HUDSalirCorral.active)
         {
             // Salir a pueblo
-            SceneManager.LoadScene("Granja");
+            SceneManager.LoadScene("Granja 2");
         }
     }
 }

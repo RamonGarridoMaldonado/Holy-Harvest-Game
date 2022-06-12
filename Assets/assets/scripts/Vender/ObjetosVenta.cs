@@ -15,6 +15,8 @@ public class ObjetosVenta : MonoBehaviour
         {
             if (item.Key == "Tomate (USE)" && item.Value >= 1)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido Vender").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 manager.GetComponent<Bolsa>().usarObjetoInventario("Tomate (USE)");
                 GameManager.setSumarDinero(200);
                 textoInformacion.text = "Tomate vendido +200€";
@@ -37,6 +39,8 @@ public class ObjetosVenta : MonoBehaviour
         {
             if (item.Key == "Maiz (USE)" && item.Value >= 1)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido Vender").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 manager.GetComponent<Bolsa>().usarObjetoInventario("Maiz (USE)");
                 GameManager.setSumarDinero(500);
                 textoInformacion.text = "Maiz vendido +500€";
@@ -59,6 +63,8 @@ public class ObjetosVenta : MonoBehaviour
         {
             if (item.Key == "Berenjena (USE) 1" && item.Value >= 1)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido Vender").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 manager.GetComponent<Bolsa>().usarObjetoInventario("Berenjena (USE) 1");
                 GameManager.setSumarDinero(350);
                 textoInformacion.text = "Berenjena vendido +350€";
@@ -81,6 +87,8 @@ public class ObjetosVenta : MonoBehaviour
         {
             if (item.Key == "Huevo (USE) 2" && item.Value >= 1)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido Vender").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 manager.GetComponent<Bolsa>().usarObjetoInventario("Huevo (USE) 2");
                 GameManager.setSumarDinero(150);
                 textoInformacion.text = "Huevo vendido +150€";

@@ -32,6 +32,8 @@ public class ObjetosTienda : MonoBehaviour
 
     public void comprarObjeto() {
         if (precioCompra<=GameManager.getDinero()) {
+            AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra").GetComponent<AudioSource>();
+            sonidoCompra.Play();
             GameManager.setRestarDinero(precioCompra);
             bolsa.verificarSlotVacio(itemToAdd,itemToAdd.name, cantidadObjeto);
             TextoDinero.text = GameManager.getDinero().ToString() + " $";

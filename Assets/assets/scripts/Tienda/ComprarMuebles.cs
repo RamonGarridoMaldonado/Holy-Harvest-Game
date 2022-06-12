@@ -16,6 +16,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 200)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setBalonC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -34,6 +36,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 250)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setPlantaC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -53,6 +57,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 600)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setestanteriaLibrosC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -72,6 +78,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 400)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setLavadorC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -91,6 +99,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 150)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setlibrosAbajoC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -110,6 +120,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 450)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setMesaAbajoC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -129,6 +141,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 150)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setsilla1C();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -148,6 +162,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 600)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setSillonArribaC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -167,6 +183,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 450 )
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setsillonFueraC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -186,6 +204,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 600)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setSillonPlantaBajaC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -205,6 +225,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 400)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setVitroceramicaC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -224,6 +246,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 500)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setMesitaArribaC();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
@@ -243,6 +267,8 @@ public class ComprarMuebles : MonoBehaviour
         {
             if (GameManager.getDinero() >= 400)
             {
+                AudioSource sonidoCompra = GameObject.Find("Sonidos/Sonido compra mueble").GetComponent<AudioSource>();
+                sonidoCompra.Play();
                 Camera.main.GetComponent<MueblesComprados>().setMesitaArriba2C();
                 //GameManager.anadirCompraMueble();
                 imagenVendido.SetActive(true);
