@@ -21,6 +21,28 @@ public class RecogerItem : MonoBehaviour
         {
             bolsa.verificarSlotVacio(itemToAdd, itemToAdd.name, cantidadObjeto);
             Destroy(gameObject);
+            if (itemToAdd.name.Equals("Tomate (USE)"))
+            {
+                GameManager.objetosInventario[0].sumarCantidad(1);
+                GameManager.objetosInventario[0].getCantidad();
+                print("tomate recogido");
+            } else if (itemToAdd.name.Equals("Maiz (USE)"))
+            {
+                GameManager.objetosInventario[4].sumarCantidad(1);
+                print("maiz recogido");
+            }
+            else if (itemToAdd.name.Equals("Berenjena (USE) 1"))
+            {
+                GameManager.objetosInventario[6].sumarCantidad(1);
+                print("berenjena recogido");
+            }
+            else if (itemToAdd.name.Equals("Huevo (USE) 2"))
+            {
+                GameManager.objetosInventario[7].sumarCantidad(1);
+                GameManager.objetosInventario[7].getCantidad();
+                print("huevo recogido");
+
+            }
         }
     }
 }

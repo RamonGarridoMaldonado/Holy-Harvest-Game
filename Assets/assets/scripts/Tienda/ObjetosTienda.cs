@@ -37,6 +37,19 @@ public class ObjetosTienda : MonoBehaviour
             GameManager.setRestarDinero(precioCompra);
             bolsa.verificarSlotVacio(itemToAdd,itemToAdd.name, cantidadObjeto);
             TextoDinero.text = GameManager.getDinero().ToString() + " $";
+            if (itemToAdd.name.Equals("Regadera (USE)"))
+            {
+                GameManager.objetosInventario[2].sumarCantidad(1);
+            } else if (itemToAdd.name.Equals("Tomatera (USE) 1"))
+            {
+                GameManager.objetosInventario[1].sumarCantidad(1);
+            } else if (itemToAdd.name.Equals("PlantaMaiz (USE) 2"))
+            {
+                GameManager.objetosInventario[3].sumarCantidad(1);
+            } else if (itemToAdd.name.Equals("PlantaBerenjena (USE) 2"))
+            {
+                GameManager.objetosInventario[5].sumarCantidad(1);
+            }
         }
     }
 }

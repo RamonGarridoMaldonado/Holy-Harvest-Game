@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Bolsa : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class Bolsa : MonoBehaviour
     private bool estaInstanciado;
     public GameObject inv;
     public bool ActivarInventario;
-    public GameObject jugador;
+    public GameObject jugador,HUDVender,HUDTienda, HUDTiendaMuebles;
     Text textoCantidad;
 
     // Diccionario para guardar los objetos (String para el nombre del objeto e Int para la cantidad)
@@ -106,25 +108,54 @@ public class Bolsa : MonoBehaviour
 
     private void Update()
     {
-        // Al activar el inventario se activa el cursor y se desactiva el jugador para que no pueda moverse mientras está en el menú  
-        if (ActivarInventario)
+        if (SceneManager.GetActiveScene().name.Equals("Pueblo"))
         {
-            Cursor.visible = true;
-            inv.SetActive(true);
-            jugador.SetActive(false);
-        }
-        // Si el inventario está desactivado, se vuelve a activar el gameObject del jugador jugador para que pueda volver a moverse
-        else
-        {
-            Cursor.visible = false;
-            inv.SetActive(false);
-            jugador.SetActive(true);
-        }
+            // Al activar el inventario se activa el cursor y se desactiva el jugador para que no pueda moverse mientras está en el menú  
+            if (ActivarInventario)
+            {
+                Cursor.visible = true;
+                inv.SetActive(true);
+                jugador.SetActive(false);
+            }
+            else if (HUDTienda.activeSelf || HUDVender.activeSelf || HUDTiendaMuebles.activeSelf)
+            {
+                Cursor.visible = true;
+            }
+            // Si el inventario está desactivado, se vuelve a activar el gameObject del jugador jugador para que pueda volver a moverse
+            else
+            {
+                Cursor.visible = false;
+                inv.SetActive(false);
+                jugador.SetActive(true);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Tab))
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                // Esto hace que el inventario se active o desactive con la misma letra
+                ActivarInventario = !ActivarInventario;
+            }
+        } else
         {
-            // Esto hace que el inventario se active o desactive con la misma letra
-            ActivarInventario = !ActivarInventario;
+            // Al activar el inventario se activa el cursor y se desactiva el jugador para que no pueda moverse mientras está en el menú  
+            if (ActivarInventario)
+            {
+                Cursor.visible = true;
+                inv.SetActive(true);
+                jugador.SetActive(false);
+            }
+            // Si el inventario está desactivado, se vuelve a activar el gameObject del jugador jugador para que pueda volver a moverse
+            else
+            {
+                Cursor.visible = false;
+                inv.SetActive(false);
+                jugador.SetActive(true);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                // Esto hace que el inventario se active o desactive con la misma letra
+                ActivarInventario = !ActivarInventario;
+            }
         }
     }
 

@@ -22,4 +22,9 @@ public class Salir : MonoBehaviour
         pfb.guardarInventario();
         SceneManager.LoadScene("MenuInicial");
     }
+
+    public void salirJuego()
+    {
+        Application.Quit();
+    }
 }

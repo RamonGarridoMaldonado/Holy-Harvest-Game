@@ -117,10 +117,12 @@ public class TemporizadorCultivos : MonoBehaviour
 
     IEnumerator esperarAnimacion()
     {
-        jugador.GetComponent<MovimientoJugador>().enabled = false;
+        AudioSource sonidoRegar = GameObject.Find("Sonidos/Sonido regar").GetComponent<AudioSource>();
+        sonidoRegar.Play();
         print("Entra en la corutina");
         yield return new WaitForSeconds(3);
         animator.SetBool("regando", false);
-        jugador.GetComponent<MovimientoJugador>().enabled = true;
+        animator.SetFloat("velocidad", 0f, 0.1f, Time.deltaTime);
+        sonidoRegar.Stop();
     }
 }

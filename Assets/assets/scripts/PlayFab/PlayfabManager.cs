@@ -34,11 +34,14 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSucces, OnError);
     }
 
-    void OnRegisterSucces (RegisterPlayFabUserResult result)
+    void OnRegisterSucces(RegisterPlayFabUserResult result)
     {
+        GuardarDatosJugador("100", "1500", "False", "False", "False", "False", "False", "False");
+        CargarDatosJugador();
         Debug.Log("Registrado y logeado");
         SceneManager.LoadScene("MenuInicial");
     }
+
 
     public void botonAcceder()
     {
@@ -391,10 +394,11 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.GetUserData(new GetUserDataRequest(), OnInventarioRecivido, OnError);
     }
 
+
     void OnInventarioRecivido(GetUserDataResult result)
     {
         List<Objeto> objetos = JsonConvert.DeserializeObject<List<Objeto>>(result.Data["Inventario"].Value);
-            for (int i=0;i<7;i++)
+            for (int i=0;i<8;i++)
             {
                 print(objetos[i].getCantidad());
                 GameManager.objetosInventario[i].establecerNuevaCantidad(objetos[i].getCantidad());

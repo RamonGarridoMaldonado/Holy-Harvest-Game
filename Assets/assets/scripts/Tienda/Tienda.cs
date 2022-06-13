@@ -15,7 +15,6 @@ public class Tienda : MonoBehaviour
 
     private void Start()
     {
-        Cursor.visible = true;
         bolsa = gameObject.GetComponent<BolsaTienda>();
         actualizarTienda();
     }
@@ -32,12 +31,10 @@ public class Tienda : MonoBehaviour
         {
              HUDComprar.active = true;
             jugador.active = false;
-            Cursor.visible = true;
         } else
         {
             HUDComprar.active = false;
             jugador.active = true;
-            Cursor.visible = false;
         }
     }
 
@@ -57,6 +54,7 @@ public class Tienda : MonoBehaviour
     {
         puedeComprar = true;
         botonComprar.active = true;
+        Cursor.visible = true;
     }
 
     [System.Obsolete]
@@ -64,5 +62,6 @@ public class Tienda : MonoBehaviour
     {
         puedeComprar = false;
         botonComprar.active = false;
+        Cursor.visible = false;
     }
 }

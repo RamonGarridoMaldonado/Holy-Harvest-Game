@@ -21,6 +21,7 @@ public class ObjetosVenta : MonoBehaviour
                 GameManager.setSumarDinero(200);
                 textoInformacion.text = "Tomate vendido +200€";
                 textoDinero.text = GameManager.getDinero().ToString() + " $";
+                GameManager.objetosInventario[0].restarCantidad(1);
             }
         }
         if (!encontrado)
@@ -45,6 +46,7 @@ public class ObjetosVenta : MonoBehaviour
                 GameManager.setSumarDinero(500);
                 textoInformacion.text = "Maiz vendido +500€";
                 textoDinero.text = GameManager.getDinero().ToString() + " $";
+                GameManager.objetosInventario[4].restarCantidad(1);
             }
         }
         if (!encontrado)
@@ -69,6 +71,7 @@ public class ObjetosVenta : MonoBehaviour
                 GameManager.setSumarDinero(350);
                 textoInformacion.text = "Berenjena vendido +350€";
                 textoDinero.text = GameManager.getDinero().ToString() + " $";
+                GameManager.objetosInventario[6].restarCantidad(1);
             }
         }
         if (!encontrado)
@@ -93,6 +96,7 @@ public class ObjetosVenta : MonoBehaviour
                 GameManager.setSumarDinero(150);
                 textoInformacion.text = "Huevo vendido +150€";
                 textoDinero.text = GameManager.getDinero().ToString() + " $";
+                GameManager.objetosInventario[7].restarCantidad(1);
             }
         }
         if (!encontrado)

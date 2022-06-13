@@ -30,7 +30,8 @@ public class SalirCorral : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && HUDSalirCorral.active)
         {
-            // Salir a pueblo
+            PlayfabManager pfb = new PlayfabManager();
+            pfb.guardarInventario();
             SceneManager.LoadScene("Granja 2");
         }
     }

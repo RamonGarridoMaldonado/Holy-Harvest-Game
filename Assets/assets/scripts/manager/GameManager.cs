@@ -19,9 +19,10 @@ public class GameManager : MonoBehaviour
     static bool logro1Conseguido = false, logro2Conseguido = false, logro3Conseguido = false;
     static bool zonaComprada = false;
     public static Objeto[] objetosInventario;
-    public static Objeto tomateraInventario, tomateInventario, regaderaInventario, PlantaMaizInventario, maizInventario, PlantaBerenjenaInventario, berenjenaInventario;
+    public static Objeto tomateraInventario, tomateInventario, regaderaInventario, PlantaMaizInventario, maizInventario, PlantaBerenjenaInventario, berenjenaInventario, HuevoInventario;
     public static bool actualizar = false;
     public GameObject tomateParaVender, MaizParaVender, BerenjenaParaVender, HuevoParaVender;
+    public static bool mostrarCursor = false;
     #endregion
 
     // Start is called before the first frame update
@@ -59,28 +60,34 @@ public class GameManager : MonoBehaviour
 
         #region objetos
 
-        objetosInventario = new Objeto[7];
+        objetosInventario = new Objeto[8];
 
         tomateInventario = new Objeto("Tomate", 0);
         tomateraInventario = new Objeto("Tomatera", 0);
-        regaderaInventario = new Objeto("Regadera",0);
+        regaderaInventario = new Objeto("Regadera", 0);
         PlantaMaizInventario = new Objeto("Planta Maiz", 0);
         maizInventario = new Objeto("Maiz", 0);
         PlantaBerenjenaInventario = new Objeto("Planta Berenjena", 0);
         berenjenaInventario = new Objeto("Berenjena", 0);
+        HuevoInventario = new Objeto("Huevo", 0);
+
 
         objetosInventario[0] = tomateInventario; objetosInventario[1] = tomateraInventario; objetosInventario[2] = regaderaInventario;
         objetosInventario[3] = PlantaMaizInventario; objetosInventario[4] = maizInventario; objetosInventario[5] = PlantaBerenjenaInventario;
-        objetosInventario[6] = berenjenaInventario;
+        objetosInventario[6] = berenjenaInventario; objetosInventario[7] = HuevoInventario;
+
 
         #endregion
 
-        bolsa.verificarSlotVacio(tomateParaVender, "Tomate (USE)", 15);
-        bolsa.verificarSlotVacio(MaizParaVender, "Maiz (USE)", 15);
-        bolsa.verificarSlotVacio(BerenjenaParaVender, "Berenjena (USE) 1", 15);
-        bolsa.verificarSlotVacio(HuevoParaVender, "Huevo (USE) 2", 15);
-
         Cursor.visible = false;
+
+        if (objetosInventario[0].getCantidad() <= 0 && objetosInventario[1].getCantidad() <= 0 && objetosInventario[2].getCantidad() <= 0 && objetosInventario[3].getCantidad() <= 0 &&
+                objetosInventario[4].getCantidad() <= 0 && objetosInventario[5].getCantidad() <= 0 && objetosInventario[6].getCantidad() <= 0 && objetosInventario[7].getCantidad() <= 0)
+        {
+            bolsa.verificarSlotVacio(TomateraPlanta, "Tomatera (USE) 1", 5); objetosInventario[1].sumarCantidad(5);
+            bolsa.verificarSlotVacio(BerenjenaPlanta, "PlantaBerenjena (USE) 2", 5); objetosInventario[5].sumarCantidad(5);
+            bolsa.verificarSlotVacio(MaizPlanta, "PlantaMaiz (USE) 2", 5); objetosInventario[4].sumarCantidad(5);
+        }
     }
     // Update is called once per frame
     void Update()
@@ -91,12 +98,40 @@ public class GameManager : MonoBehaviour
         }
         if (actualizar)
         {
-            bolsa.verificarSlotVacio(TomateraPlanta, "Tomatera (USE) 1", objetosInventario[1].getCantidad());
-            bolsa.verificarSlotVacio(MaizPlanta, "PlantaMaiz (USE) 2", objetosInventario[3].getCantidad());
-            bolsa.verificarSlotVacio(BerenjenaPlanta, "PlantaBerenjena (USE) 2", objetosInventario[5].getCantidad());
-            bolsa.verificarSlotVacio(regadera, "Regadera (USE)", objetosInventario[2].getCantidad());
+            if (objetosInventario[1].getCantidad()>0)
+            {
+                bolsa.verificarSlotVacio(TomateraPlanta, "Tomatera (USE) 1", objetosInventario[1].getCantidad());
+
+            }
+            if (objetosInventario[3].getCantidad()>0)
+            {
+                bolsa.verificarSlotVacio(MaizPlanta, "PlantaMaiz (USE) 2", objetosInventario[3].getCantidad());
+
+            }
+            if (objetosInventario[5].getCantidad()>0)
+            {
+                bolsa.verificarSlotVacio(BerenjenaPlanta, "PlantaBerenjena (USE) 2", objetosInventario[5].getCantidad());
+            }
+            if (objetosInventario[2].getCantidad()>0)
+            {
+                bolsa.verificarSlotVacio(regadera, "Regadera (USE)", objetosInventario[2].getCantidad());
+            }
+            if (objetosInventario[0].getCantidad()>0)
+            {
+                bolsa.verificarSlotVacio(tomateParaVender, "Tomate (USE)", objetosInventario[0].getCantidad());
+            }
+            if (objetosInventario[4].getCantidad()>0)
+            {
+                bolsa.verificarSlotVacio(MaizParaVender, "Maiz (USE)", objetosInventario[4].getCantidad());
+            }
+            if (objetosInventario[6].getCantidad() > 0)
+            {
+                bolsa.verificarSlotVacio(BerenjenaParaVender, "Berenjena (USE) 1", objetosInventario[6].getCantidad());
+            }
+            bolsa.verificarSlotVacio(HuevoParaVender, "Huevo (USE) 2", objetosInventario[7].getCantidad());
             actualizar = false;
         }
+
     }
 
     #region Dinero

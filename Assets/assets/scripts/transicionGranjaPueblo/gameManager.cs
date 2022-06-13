@@ -42,7 +42,7 @@ public class gameManager : MonoBehaviour
         color.a = 0;
         pantallaCarga.SetActive(false);
         bote.SetActive(true);
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(4f);
         if (SceneManager.GetActiveScene().name.Equals("TransicionGranjaPueblo"))
         {
             SceneManager.LoadScene("Pueblo");

@@ -9,6 +9,7 @@ public class Misiones : MonoBehaviour
     public GameObject camaraPrincipal, camaraConversacion;
     Animator animator;
     public GameManager manager;
+    private bool hablando = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,10 @@ public class Misiones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hablando)
+        {
+            Cursor.visible = true;
+        }
         if (Aceptada && !HUDMisionAceptada.activeSelf)
         {
             OcultarTodosHUD();
@@ -44,8 +49,10 @@ public class Misiones : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        hablando = true;
         if (other.tag == "HablarJugador")
         {
+            Cursor.visible = true;
             personaje.GetComponent<MovimientoJugador>().enabled = false;
             this.transform.LookAt(personaje.transform);
             dentro = true;
@@ -89,6 +96,7 @@ public class Misiones : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        hablando = false;
         if (other.tag == "HablarJugador")
         {
             if (Aceptada)
@@ -98,6 +106,7 @@ public class Misiones : MonoBehaviour
             salirConversacion();
         }
     }
+
 
     public void AceptarMision()
     {

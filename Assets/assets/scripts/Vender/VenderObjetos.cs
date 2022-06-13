@@ -7,6 +7,7 @@ public class VenderObjetos : MonoBehaviour
 
     public GameObject HUDVender;
 
+
     public void OnTriggerEnter(Collider other)
     {
         HUDVender.SetActive(true);
@@ -16,6 +17,6 @@ public class VenderObjetos : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
         HUDVender.SetActive(false);
-        Cursor.visible = true;
+        Cursor.visible = false;
     }
 }
