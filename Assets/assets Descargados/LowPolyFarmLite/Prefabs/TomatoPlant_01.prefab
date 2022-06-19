@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae6b421d798e6634a07918fa242d69b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoCosechar: 60
+  tiempoCosechar: 30
   cosecha: {fileID: 5473569773201198281, guid: fd8e0760db14a534a89257f68a4f2a8c, type: 3}
   textoContador: {fileID: 7521549117518148894, guid: 90a1c98e1a4cca9729699c53e7fc238f,
     type: 3}

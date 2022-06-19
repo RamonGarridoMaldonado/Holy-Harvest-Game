@@ -12,9 +12,9 @@ public class BarraDeEstamina : MonoBehaviour
     // Update is called once per frame
     void Update() 
     {
-        barraDeEstamina.fillAmount=EstaminaActual/estaminaMaxima;
-        //textoEstamina.SetText(EstaminaActual.ToString()+" / "+estaminaMaxima.ToString);
-        textoEstamina.text = estaminaMaxima.ToString();
+        barraDeEstamina.fillAmount= EstaminaActual / 100;
+        textoEstamina.text = "";
+        textoEstamina.text = EstaminaActual.ToString()+ " / 100" ;
     }
 
     public void restarEstamina(float restar) {

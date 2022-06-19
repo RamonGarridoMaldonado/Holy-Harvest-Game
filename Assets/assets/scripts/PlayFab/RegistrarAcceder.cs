@@ -34,4 +34,9 @@ public class RegistrarAcceder : MonoBehaviour
         PlayfabManager pfb = new PlayfabManager();
         pfb.botonRecuperarPass();
     }
+
+    public void exit()
+    {
+        Application.Quit();
+    }
 }

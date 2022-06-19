@@ -100,6 +100,7 @@ public class Plantar : MonoBehaviour
     {
         yield return new WaitForSeconds(8);
         this.GetComponent<BarraDeEstamina>().restarEstamina(10);
+        print(this.GetComponent<BarraDeEstamina>().verEstaminaActual());
         Instantiate(PlantaTomatera, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("Tomatera (USE) 1");
         GameManager.objetosInventario[1].restarCantidad(1);
@@ -111,6 +112,7 @@ public class Plantar : MonoBehaviour
     {
         yield return new WaitForSeconds(8);
         this.GetComponent<BarraDeEstamina>().restarEstamina(10);
+        print(this.GetComponent<BarraDeEstamina>().verEstaminaActual());
         Instantiate(plantaMaiz, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("PlantaMaiz (USE) 2");
         GameManager.objetosInventario[3].restarCantidad(1);
@@ -122,6 +124,7 @@ public class Plantar : MonoBehaviour
     {
         yield return new WaitForSeconds(8);
         this.GetComponent<BarraDeEstamina>().restarEstamina(10);
+        print(this.GetComponent<BarraDeEstamina>().verEstaminaActual());
         Instantiate(PlantaBerenjena, posPlantar, Quaternion.identity);
         manager.GetComponent<Bolsa>().usarObjetoInventario("PlantaBerenjena (USE) 2");
         GameManager.objetosInventario[5].restarCantidad(1);

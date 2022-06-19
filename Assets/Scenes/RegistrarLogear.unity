@@ -1835,8 +1835,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973604238}
-  m_LocalRotation: {x: -0.19840674, y: 0.027347347, z: 0.0055402536, w: 0.97972256}
-  m_LocalPosition: {x: 493.86072, y: -371.99783, z: -763.78186}
+  m_LocalRotation: {x: 0.16446626, y: 0.033129588, z: 0.005522953, w: -0.98581076}
+  m_LocalPosition: {x: 168.1515, y: -510.41885, z: -1393.225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1984,7 +1984,6 @@ GameObject:
   - component: {fileID: 1377713400}
   - component: {fileID: 1377713399}
   - component: {fileID: 1377713398}
-  - component: {fileID: 1377713402}
   m_Layer: 5
   m_Name: btnSalir
   m_TagString: Untagged
@@ -2020,7 +2019,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377713396}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e81536863bc7bf4ba966164a4d7ce0f, type: 3}
   m_Name: 
@@ -2069,8 +2068,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1377713402}
-        m_TargetAssemblyTypeName: Salir, Assembly-CSharp
+      - m_Target: {fileID: 1377713398}
+        m_TargetAssemblyTypeName: RegistrarAcceder, Assembly-CSharp
         m_MethodName: exit
         m_Mode: 1
         m_Arguments:
@@ -2119,18 +2118,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377713396}
   m_CullTransparentMesh: 1
---- !u!114 &1377713402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377713396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb2feefa335b5342b24855ec91b95b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1449602426
 GameObject:
   m_ObjectHideFlags: 0
